@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148, 163, 184, 0.4) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #8b5cf6, #22d3ee);
+  border-radius: 999px;
+}
+
+body {
+  color: #0f172a;
+  background-color: #e2e8f0;
+  background-image: radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.08), transparent 25%),
+    radial-gradient(circle at 80% 0%, rgba(6, 182, 212, 0.12), transparent 30%),
+    radial-gradient(circle at 50% 80%, rgba(249, 115, 22, 0.1), transparent 28%);
+}
+
+.dark body {
+  color: #e2e8f0;
+  background-color: #0a0f1f;
+  background-image: radial-gradient(circle at 10% 20%, rgba(138, 92, 246, 0.08), transparent 25%),
+    radial-gradient(circle at 90% 10%, rgba(34, 211, 238, 0.12), transparent 30%),
+    radial-gradient(circle at 50% 80%, rgba(249, 115, 22, 0.1), transparent 28%);
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-6xl px-6 md:px-10 lg:px-12;
+}
+
+.card-surface {
+  @apply rounded-3xl border border-slate-200/80 bg-white/80 text-ink backdrop-blur-xl shadow-card transition hover:-translate-y-1 hover:shadow-glow;
+  @apply dark:border-white/5 dark:bg-white/5 dark:text-cloud;
+}
+
+.glass-border {
+  background: linear-gradient(135deg, rgba(148, 163, 184, 0.3), rgba(255, 255, 255, 0.04));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.35);
+}
+
+.text-gradient {
+  background: linear-gradient(120deg, #8b5cf6 0%, #22d3ee 40%, #f97316 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.shadow-border {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.07);
+}
+
+.grid-hero {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mask-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 1), transparent 65%);
+}
+
+@layer components {
+  .pill {
+    @apply glass-border text-sm text-ink px-4 py-2 inline-flex items-center gap-2;
+    @apply dark:text-cloud;
+  }
+}
