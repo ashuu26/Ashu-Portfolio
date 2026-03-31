@@ -1,6 +1,7 @@
 'use client';
 
-import { ArrowUpRight, Github, Globe2, MapPin, Phone, ShieldCheck, Sparkles } from 'lucide-react';
+import Image from 'next/image';
+import { ArrowUpRight, Globe2, MapPin, Phone, ShieldCheck, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { contact, credentials, experience, hero, projects, skills } from '@/data/content';
@@ -36,9 +37,9 @@ export default function Page() {
     <div className="space-y-20 pb-24">
       {/* Hero */}
       <section className="section-shell pt-16 md:pt-20" id="about">
-        <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr]">
+        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <motion.div
-            className="space-y-6"
+            className="space-y-6 hero-visual rounded-3xl border border-white/10 p-8 shadow-glow"
             initial="hidden"
             animate="show"
             variants={container}
@@ -75,11 +76,19 @@ export default function Page() {
                 <ArrowUpRight size={16} />
               </Link>
               <a
-                href="https://github.com/yourhandle"
+                href="https://www.linkedin.com/in/ashu-saini-bb96ba1a7"
                 target="_blank"
                 className="inline-flex items-center gap-2 rounded-full border border-white/10 px-5 py-3 text-sm text-ink/80 dark:text-cloud/80 hover:border-white/30"
               >
-                GitHub profile
+                LinkedIn profile
+              </a>
+              <a
+                href="/AshuSainiResume.pdf"
+                className="inline-flex items-center gap-2 rounded-full bg-white/90 px-5 py-3 text-sm font-semibold text-ink shadow-border hover:-translate-y-0.5 transition dark:bg-white/10 dark:text-cloud"
+                download
+              >
+                Download résumé
+                <ArrowUpRight size={16} />
               </a>
             </div>
           </motion.div>
@@ -87,34 +96,21 @@ export default function Page() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0, transition: { delay: 0.12 } }}
-            className="card-surface relative overflow-hidden"
+            className="card-surface relative overflow-hidden p-0"
           >
-            <div className="absolute inset-0 grid-hero" aria-hidden />
-            <div className="relative p-8">
-              <div className="mb-6 flex items-center justify-between">
-                <p className="text-sm text-mist">Availability</p>
-                <span className="rounded-full bg-emerald-500/20 px-3 py-1 text-xs font-semibold text-emerald-200">
-                  Taking 2 new clients
-                </span>
+            <div className="absolute inset-0 bg-gradient-to-br from-pulse/20 via-aurora/15 to-ember/15" aria-hidden />
+            <div className="relative h-full">
+              <div className="absolute right-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-ink shadow-sm dark:bg-white/80">
+                AWS Certified
               </div>
-              <div className="space-y-5 text-sm text-ink/80 dark:text-cloud/80">
-                <div className="flex items-center justify-between">
-                  <span>Clouds</span>
-                  <span className="font-medium text-ink dark:text-cloud">AWS · Azure · GCP</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span>Engagements</span>
-                  <span className="font-medium text-ink dark:text-cloud">Advisory · Build · Review</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span>Timezone</span>
-                  <span className="font-medium text-ink dark:text-cloud">GMT+8 · Global-friendly</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span>Preferred cadence</span>
-                  <span className="font-medium text-ink dark:text-cloud">Weekly checkpoints</span>
-                </div>
-              </div>
+              <Image
+                src="/profile-headshot.jpg"
+                alt="Ashu Saini professional portrait"
+                width={1200}
+                height={1400}
+                className="h-full w-full object-cover"
+                priority
+              />
             </div>
           </motion.div>
         </div>
@@ -125,7 +121,7 @@ export default function Page() {
         <SectionHeader
           eyebrow="Experience"
           title="Guiding platforms from design to day-2 success"
-          copy="Hands-on leadership across architecture, enablement, and resilient operations."
+          copy="11-year track record across architecture, enablement, and resilient operations."
         />
         <div className="grid gap-6 lg:grid-cols-2">
           {experience.map((role, idx) => (
@@ -139,12 +135,26 @@ export default function Page() {
               custom={idx * 0.1}
             >
               <div className="flex items-center justify-between gap-3">
-                <div>
-                  <p className="text-xs uppercase tracking-[0.2em] text-ink/60 dark:text-cloud/60">{role.period}</p>
-                  <h3 className="mt-1 text-xl font-semibold text-ink dark:text-cloud">{role.role}</h3>
-                  <p className="text-mist">{role.company}</p>
+                <div className="flex items-center gap-3">
+                  {role.logo ? (
+                    <div className="h-14 w-14 overflow-hidden rounded-2xl border border-white/10 bg-white/10 p-2 dark:bg-white/10">
+                      <Image
+                        src={role.logo}
+                        alt={`${role.company} logo`}
+                        width={64}
+                        height={64}
+                        className="h-full w-full object-contain"
+                      />
+                    </div>
+                  ) : (
+                    <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-aurora to-pulse opacity-80" />
+                  )}
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.2em] text-ink/60 dark:text-cloud/60">{role.period}</p>
+                    <h3 className="mt-1 text-xl font-semibold text-ink dark:text-cloud">{role.role}</h3>
+                    <p className="text-mist">{role.company}</p>
+                  </div>
                 </div>
-                <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-aurora to-pulse opacity-80" />
               </div>
               <p className="mt-4 text-ink/80 dark:text-cloud/80">{role.summary}</p>
               <ul className="mt-4 space-y-3 text-sm text-ink/80 dark:text-cloud/80">
@@ -192,13 +202,6 @@ export default function Page() {
                 ))}
               </div>
               <div className="mt-auto flex items-center gap-3 pt-6">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  className="inline-flex items-center gap-2 rounded-full border border-white/10 px-3 py-2 text-sm text-ink/80 dark:text-cloud/80 hover:border-white/30"
-                >
-                  <Github size={16} /> Code
-                </a>
                 <a
                   href={project.live}
                   target="_blank"
@@ -281,6 +284,10 @@ export default function Page() {
             <div className="mt-3 flex items-center gap-3 text-ink/80 dark:text-cloud/80">
               <Phone size={18} />
               {contact.phone}
+            </div>
+            <div className="mt-3 flex items-center gap-3 text-ink/80 dark:text-cloud/80">
+              <Phone size={18} />
+              WhatsApp (calls only): {contact.whatsapp}
             </div>
             <div className="mt-3 flex items-center gap-3 text-ink/80 dark:text-cloud/80">
               <Sparkles size={18} />

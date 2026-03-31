@@ -10,14 +10,16 @@ const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope', displa
 const space = Space_Grotesk({ subsets: ['latin'], variable: '--font-space', display: 'swap' });
 
 export const metadata: Metadata = {
-  title: 'Cloud Consultant Portfolio | Ashu',
-  description: 'Portfolio for a cloud consultant showcasing expertise in architecture, DevOps, and resilient systems.',
-  metadataBase: new URL('https://example.com'),
+  title: 'Ashu Saini | Cloud Infrastructure & Migration Specialist',
+  description:
+    'Ashu Saini—10 years leading AWS cloud migrations, Terraform automation, and resilient platform operations across APAC enterprises.',
+  metadataBase: new URL('https://www.linkedin.com/in/ashu-saini-bb96ba1a7'),
   openGraph: {
-    title: 'Cloud Consultant Portfolio',
-    description: 'Projects, experience, and credentials of a cloud consultant.',
-    url: 'https://example.com',
-    siteName: 'Cloud Consultant Portfolio',
+    title: 'Ashu Saini | Cloud Infrastructure & Migration Specialist',
+    description:
+      '10 years building and operating AWS cloud platforms, disaster recovery, and IaC automation for enterprise workloads.',
+    url: 'https://www.linkedin.com/in/ashu-saini-bb96ba1a7',
+    siteName: 'Ashu Saini Portfolio',
     images: [
       {
         url: '/og-image.png',

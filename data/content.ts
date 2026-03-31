@@ -1,33 +1,52 @@
 export const hero = {
-  title: 'Cloud-native consultant turning uptime into a feature.',
+  title: 'Cloud infrastructure leader focused on AWS migrations and day-2 reliability.',
   subtitle:
-    'Designing resilient, cost-aware platforms with multi-cloud, Kubernetes, and DevSecOps practices. I guide teams from whiteboard to production with clarity and care.',
-  badges: ['Cloud Architecture', 'Platform Engineering', 'FinOps & Reliability'],
+    '11 years moving enterprise workloads to AWS, automating with Terraform, and hardening platforms with DR strategy, cost controls, and secure network architectures.',
+  badges: ['11+ Years Experience', 'AWS Cloud Migrations', 'Terraform Automation', 'DevOps & SRE'],
 };
 
 export const experience = [
   {
-    company: 'SkyStack Advisory',
-    role: 'Lead Cloud Consultant',
-    period: '2023 — Present',
+    company: 'SoftwareOne',
+    role: 'Expert Technology Infrastructure & Cloud Solution Architect',
+    period: '2021 — Present',
     summary:
-      'Designed multi-region landing zones on AWS & Azure, standardized golden paths, and mentored platform squads on IaC and observability.',
+      'Leads regulated cloud migrations and landing-zone design for banks/FSIs in Malaysia and APAC, blending AWS platform engineering with policy-as-code aligned to BNM RMiT.',
+    logo: '/logo-softwareone.svg',
     highlights: [
-      'Cut infra spend by 22% via rightsizing, Graviton adoption, and autoscaling guardrails.',
-      'Built a zero-trust service mesh with mTLS + OPA policies across 40+ microservices.',
-      'Championed SRE playbooks that reduced MTTR by 38% and improved change success rate to 96%.',
+      'Delivered RiverMeadow/VEEAM-led migrations when AWS MGN was unavailable, maintaining security baselines and minimizing downtime.',
+      'Ran discovery + assessment with Cloudamize, TCO analysis, wave planning, and AWS Well-Architected gap closure.',
+      'Built regulated AWS landing zones: VPC segmentation, VPN/Direct Connect, mTLS, centralized logging/backup, and automated guardrails.',
+      'Mapped RMiT controls to policy-as-code guardrails (egress, encryption, IAM least-privilege, logging retention) embedded in Terraform/GitOps pipelines.',
+      'Produced landing-zone reference designs and control evidence packs for compliance teams; enabled audit-ready posture with conformance checks.',
+      'Integrated Kyverno/Conftest checks and approved AMI whitelisting into CI to block non-compliant changes before deploy.'
     ],
   },
   {
-    company: 'Nimbus Labs',
-    role: 'Senior Solutions Architect',
-    period: '2020 — 2023',
+    company: 'Accenture',
+    role: 'Cloud Operations Architect Specialist',
+    period: 'Nov 2019 — Oct 2022',
     summary:
-      'Owned architecture for a SaaS analytics platform handling 4B+ events/day with Kubernetes, Kafka, and Snowflake.',
+      'Owned IaC, Kubernetes operations, and CI/CD pipelines across AWS and Azure; standardized backups, tagging, and compliance.',
+    logo: '/logo-accenture.svg',
     highlights: [
-      'Delivered 99.98% availability by introducing progressive delivery (Argo Rollouts) and chaos drills.',
-      'Built GitOps pipelines (ArgoCD/Terraform) enabling sub-hour environment spins and drift-free operations.',
-      'Established FinOps scorecards aligning engineering with CFO targets; realized $450k annual savings.',
+      'Converted CloudFormation to Terraform; managed EC2/VM scale sets, load balancers, bastions, and secure root rotations.',
+      'Implemented tag-compliance reporting, cost/performance tuning via CloudWatch + Trusted Advisor, and governance.',
+      'Built Docker images, Jenkins pipelines, and Ansible playbooks to automate patching and delivery.',
+      'Guided clients on cloud adoption strategy, security oversight, and continuous improvement of operations.',
+    ],
+  },
+  {
+    company: 'Cognizant',
+    role: 'Tech Lead',
+    period: 'Oct 2015 — Nov 2019',
+    summary:
+      'Handled incident/change management under ITIL, IAM governance, and AWS-hosted service reliability for enterprise apps.',
+    logo: '/logo-cognizant.svg',
+    highlights: [
+      'Ran major-incident coordination, post-mortems, and service restorations across application teams and vendors.',
+      'Managed IAM roles/policies, SFTP setups, and access controls; oversaw Git branching and CI/CD pipeline health.',
+      'Built and deployed Docker containers, Maven builds, and Tomcat releases; generated availability and MSR reports.',
     ],
   },
 ];
@@ -36,18 +55,16 @@ export const projects = [
   {
     name: 'Adaptive Cloud Landing Zone',
     description:
-      'Opinionated AWS blueprint with org guardrails, multi-account VPC topology, OPA policy packs, and SOC2-ready controls.',
-    stack: ['AWS', 'Terraform', 'OPA', 'Control Tower'],
-    github: 'https://github.com/yourhandle/adaptive-landing-zone',
+      'Opinionated AWS blueprint with org guardrails, multi-account VPC topology, and policy packs mapped to BNM RMiT controls (encryption, egress, IAM, logging).',
+    stack: ['AWS', 'Terraform', 'Control Tower', 'RMiT'],
     live: 'https://landingzone.cloud',
-    impact: '12min to provision a compliant sandbox; 40% faster onboarding of product teams.'
+    impact: '12min to provision a compliant sandbox; accelerates RMiT evidence with built-in policy checks and conformance packs.'
   },
   {
     name: 'Kubernetes Reliability Kit',
     description:
       'Collection of K8s operators, Prometheus rules, and chaos scenarios to harden critical workloads.',
-    stack: ['Kubernetes', 'Argo', 'Prometheus', 'Litmus'],
-    github: 'https://github.com/yourhandle/k8s-reliability-kit',
+    stack: ['Kubernetes', 'Azure DevOps', 'Prometheus', 'Litmus'],
     live: 'https://reliability-kit.dev',
     impact: 'Reduced Sev-1 frequency by 30% after adopting SLO-driven alerting and autoscaling recipes.'
   },
@@ -56,21 +73,17 @@ export const projects = [
     description:
       'End-to-end lineage, quality gates, and anomaly detection for streaming + batch pipelines.',
     stack: ['Databricks', 'dbt', 'Airflow', 'Great Expectations'],
-    github: 'https://github.com/yourhandle/data-observability-blueprint',
     live: 'https://data-observe.dev',
     impact: 'Decreased data incident triage time from hours to minutes with standardized runbooks.'
   },
 ];
 
 export const credentials = [
-  {
-    title: 'AWS Certified Solutions Architect – Professional',
-    issuer: 'Amazon Web Services',
-    year: 2025,
-  },
-  { title: 'Azure Solutions Architect Expert', issuer: 'Microsoft', year: 2024 },
-  { title: 'CKA & CKS', issuer: 'CNCF', year: 2024 },
-  { title: 'FinOps Certified Practitioner', issuer: 'FinOps Foundation', year: 2023 },
+  { title: 'AWS Certified Cloud Practitioner', issuer: 'Amazon Web Services', year: 2023 },
+  { title: 'Certification of Completion: AWS Solutions Architect', issuer: 'Amazon Web Services', year: 2020 },
+  { title: 'HashiCorp Certified: Terraform Associate', issuer: 'HashiCorp', year: 2022 },
+  { title: 'Azure Fundamentals (AZ-900)', issuer: 'Microsoft', year: 2020 },
+  { title: 'Azure Data Fundamentals', issuer: 'Microsoft', year: 2021 },
 ];
 
 export const skills = [
@@ -80,7 +93,7 @@ export const skills = [
   },
   {
     title: 'Platform Engineering',
-    items: ['Kubernetes', 'Service Mesh (Istio)', 'GitOps (ArgoCD)', 'Progressive Delivery', 'Platform APIs'],
+    items: ['Kubernetes', 'Service Mesh (Istio)', 'GitOps (Azure DevOps)', 'Progressive Delivery', 'Platform APIs'],
   },
   {
     title: 'DevSecOps & Reliability',
@@ -89,7 +102,8 @@ export const skills = [
 ];
 
 export const contact = {
-  email: 'ashu@example.com',
-  location: 'Remote · Kuala Lumpur, MY',
-  phone: '+60 12 345 6789',
+  email: 'ashuu25.saini@gmail.com',
+  location: 'Kuala Lumpur, Malaysia',
+  phone: '+60-1115407364',
+  whatsapp: '+91-8766469738',
 };
