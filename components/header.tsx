@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { Linkedin, Mail, Phone } from 'lucide-react';
 import { ThemeToggle } from './theme-toggle';
 import { motion } from 'framer-motion';
@@ -35,13 +34,13 @@ export function Header() {
           className="hidden items-center gap-4 text-sm text-ink/80 dark:text-cloud/80 lg:flex"
         >
           {navItems.map((item) => (
-            <Link
+            <a
               key={item.href}
               href={item.href}
               className="rounded-full px-3 py-2 transition hover:bg-white/60 hover:text-ink dark:hover:bg-white/10 dark:hover:text-cloud"
             >
               {item.label}
-            </Link>
+            </a>
           ))}
         </motion.nav>
 
