@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { ArrowUpRight, MapPin, Phone, ShieldCheck, Sparkles } from 'lucide-react';
+import { ArrowUpRight, MapPin, ShieldCheck, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { contact, credentials, experience, hero, projects, skills } from '@/data/content';
@@ -275,14 +275,6 @@ export default function Page() {
               {contact.location}
             </div>
             <div className="mt-3 flex items-center gap-3 text-ink/80 dark:text-cloud/80">
-              <Phone size={18} />
-              {contact.phone}
-            </div>
-            <div className="mt-3 flex items-center gap-3 text-ink/80 dark:text-cloud/80">
-              <Phone size={18} />
-              WhatsApp (calls only): {contact.whatsapp}
-            </div>
-            <div className="mt-3 flex items-center gap-3 text-ink/80 dark:text-cloud/80">
               <Sparkles size={18} />
               Response within 24h
             </div>
@@ -299,13 +291,6 @@ export default function Page() {
                 className="inline-flex items-center gap-2 rounded-full border border-white/10 px-5 py-3 text-sm text-ink/80 dark:text-cloud/80 hover:border-white/30"
               >
                 LinkedIn profile
-              </a>
-              <a
-                href="https://wa.me/918766469738"
-                target="_blank"
-                className="inline-flex items-center gap-2 rounded-full border border-white/10 px-5 py-3 text-sm text-ink/80 dark:text-cloud/80 hover:border-white/30"
-              >
-                WhatsApp (IN)
               </a>
             </div>
           </motion.div>

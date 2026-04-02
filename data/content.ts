@@ -101,6 +101,4 @@ export const skills = [
 export const contact = {
   email: 'ashuu25.saini@gmail.com',
   location: 'Kuala Lumpur, Malaysia',
-  phone: '+60-1115407364',
-  whatsapp: '+91-8766469738',
 };
