@@ -1,4 +1,4 @@
-import { Linkedin, Mail, Phone } from 'lucide-react';
+import { Linkedin, Mail } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -19,15 +19,6 @@ export function Footer() {
             </a>
             <span className="opacity-50">|</span>
             <a
-              href="https://github.com/ashuu26"
-              className="font-medium text-ink underline-offset-4 transition hover:text-ink/90 hover:underline dark:text-cloud"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
-            <span className="opacity-50">|</span>
-            <a
               href="mailto:ashuu25.saini@gmail.com"
               className="font-medium text-ink underline-offset-4 transition hover:text-ink/90 hover:underline dark:text-cloud"
             >
@@ -38,9 +29,6 @@ export function Footer() {
         <div className="flex items-center gap-3">
           <a href="mailto:ashuu25.saini@gmail.com" className="text-ink/70 transition hover:text-ink dark:text-cloud/70 dark:hover:text-cloud">
             <Mail size={18} />
-          </a>
-          <a href="tel:+601115407364" className="text-ink/70 transition hover:text-ink dark:text-cloud/70 dark:hover:text-cloud">
-            <Phone size={18} />
           </a>
           <a
             href="https://www.linkedin.com/in/ashu-saini-bb96ba1a7"

@@ -1,6 +1,6 @@
 'use client';
 
-import { Linkedin, Mail, Phone } from 'lucide-react';
+import { Linkedin, Mail } from 'lucide-react';
 import { ThemeToggle } from './theme-toggle';
 import { motion } from 'framer-motion';
 
@@ -45,13 +45,6 @@ export function Header() {
         </motion.nav>
 
         <div className="flex items-center gap-2">
-          <a
-            href="tel:+601115407364"
-            className="glass-border inline-flex h-10 w-10 items-center justify-center text-ink/80 dark:text-cloud/90 transition hover:scale-105"
-            aria-label="Call Ashu"
-          >
-            <Phone size={18} />
-          </a>
           <a
             href="https://www.linkedin.com/in/ashu-saini-bb96ba1a7"
             target="_blank"
