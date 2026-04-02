@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { ArrowUpRight, Globe2, MapPin, Phone, ShieldCheck, Sparkles } from 'lucide-react';
+import { ArrowUpRight, MapPin, Phone, ShieldCheck, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { contact, credentials, experience, hero, projects, skills } from '@/data/content';
@@ -202,13 +202,6 @@ export default function Page() {
                 ))}
               </div>
               <div className="mt-auto flex items-center gap-3 pt-6">
-                <a
-                  href={project.live}
-                  target="_blank"
-                  className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-2 text-sm text-ink dark:text-cloud hover:bg-white/15"
-                >
-                  <Globe2 size={16} /> Live
-                </a>
               </div>
             </motion.div>
           ))}
@@ -301,11 +294,18 @@ export default function Page() {
                 Email Ashu
               </a>
               <a
-                href="https://www.linkedin.com/in/yourhandle"
+                href="https://www.linkedin.com/in/ashu-saini-bb96ba1a7"
                 target="_blank"
                 className="inline-flex items-center gap-2 rounded-full border border-white/10 px-5 py-3 text-sm text-ink/80 dark:text-cloud/80 hover:border-white/30"
               >
-                LinkedIn DM
+                LinkedIn profile
+              </a>
+              <a
+                href="https://wa.me/918766469738"
+                target="_blank"
+                className="inline-flex items-center gap-2 rounded-full border border-white/10 px-5 py-3 text-sm text-ink/80 dark:text-cloud/80 hover:border-white/30"
+              >
+                WhatsApp (IN)
               </a>
             </div>
           </motion.div>

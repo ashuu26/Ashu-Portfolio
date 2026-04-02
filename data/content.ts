@@ -19,7 +19,7 @@ export const experience = [
       'Built regulated AWS landing zones: VPC segmentation, VPN/Direct Connect, mTLS, centralized logging/backup, and automated guardrails.',
       'Mapped RMiT controls to policy-as-code guardrails (egress, encryption, IAM least-privilege, logging retention) embedded in Terraform/GitOps pipelines.',
       'Produced landing-zone reference designs and control evidence packs for compliance teams; enabled audit-ready posture with conformance checks.',
-      'Integrated Kyverno/Conftest checks and approved AMI whitelisting into CI to block non-compliant changes before deploy.'
+      'Implemented CI policy checks and approved AMI whitelisting to block non-compliant changes before deploy.'
     ],
   },
   {
@@ -57,7 +57,6 @@ export const projects = [
     description:
       'Opinionated AWS blueprint with org guardrails, multi-account VPC topology, and policy packs mapped to BNM RMiT controls (encryption, egress, IAM, logging).',
     stack: ['AWS', 'Terraform', 'Control Tower', 'RMiT'],
-    live: 'https://landingzone.cloud',
     impact: '12min to provision a compliant sandbox; accelerates RMiT evidence with built-in policy checks and conformance packs.'
   },
   {
@@ -65,7 +64,6 @@ export const projects = [
     description:
       'Collection of K8s operators, Prometheus rules, and chaos scenarios to harden critical workloads.',
     stack: ['Kubernetes', 'Azure DevOps', 'Prometheus', 'Litmus'],
-    live: 'https://reliability-kit.dev',
     impact: 'Reduced Sev-1 frequency by 30% after adopting SLO-driven alerting and autoscaling recipes.'
   },
   {
@@ -73,7 +71,6 @@ export const projects = [
     description:
       'End-to-end lineage, quality gates, and anomaly detection for streaming + batch pipelines.',
     stack: ['Databricks', 'dbt', 'Airflow', 'Great Expectations'],
-    live: 'https://data-observe.dev',
     impact: 'Decreased data incident triage time from hours to minutes with standardized runbooks.'
   },
 ];
