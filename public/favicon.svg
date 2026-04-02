@@ -1,0 +1,13 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AS monogram">
+  <defs>
+    <linearGradient id="g" x1="12%" y1="8%" x2="88%" y2="92%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="48" fill="url(#g)"/>
+  <text x="50%" y="57%" text-anchor="middle" font-family="Space Grotesk, 'Inter', system-ui, -apple-system, sans-serif" font-size="120" font-weight="700" fill="#f8fafc" letter-spacing="4">
+    AS
+  </text>
+</svg>
