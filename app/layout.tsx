@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     'Ashu Saini—10 years leading AWS cloud migrations, Terraform automation, and resilient platform operations across APAC enterprises.',
   metadataBase: new URL('https://www.linkedin.com/in/ashu-saini-bb96ba1a7'),
   icons: {
-    icon: '/favicon.svg',
-    shortcut: '/favicon.svg',
-    apple: '/favicon.svg'
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png'
   },
   openGraph: {
     title: 'Ashu Saini | Cloud Infrastructure & Migration Specialist',
