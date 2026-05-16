@@ -19,8 +19,12 @@ export function Header() {
       <motion.div
         initial={{ opacity: 0, y: -8 }}
         animate={{ opacity: 1, y: 0 }}
-        className="pointer-events-auto flex w-full items-center justify-between gap-4 rounded-full border border-white/10 bg-white/80 px-5 py-3 shadow-lg backdrop-blur-xl dark:border-white/10 dark:bg-night/70"
+        className="pointer-events-auto relative flex w-full items-center justify-between gap-4 overflow-hidden rounded-full border border-amber-100/90 bg-gradient-to-r from-amber-50/95 via-orange-50/90 to-stone-50/95 px-5 py-3 shadow-card backdrop-blur-xl dark:border-white/10 dark:bg-night/70 dark:bg-none dark:shadow-lg"
       >
+        <div
+          className="pointer-events-none absolute inset-x-8 bottom-0 h-px bg-gradient-to-r from-transparent via-amber-200/90 to-transparent dark:via-white/15"
+          aria-hidden
+        />
         <div className="flex items-center gap-3">
           <div className="h-11 w-11 overflow-hidden rounded-full border border-white/30 bg-night shadow-glow">
             <Image

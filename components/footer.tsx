@@ -2,7 +2,7 @@ import { Linkedin, Mail } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/5 bg-night/80">
+    <footer className="border-t border-amber-100/90 bg-gradient-to-r from-amber-50/95 via-orange-50/90 to-stone-50/95 dark:border-white/5 dark:bg-night/80 dark:bg-none">
       <div className="section-shell flex flex-col gap-4 py-8 text-sm text-mist md:flex-row md:items-center md:justify-between">
         <div className="space-y-1 text-ink/70 dark:text-cloud/70">
           <p>© 2026 Ashu Saini</p>
