@@ -12,7 +12,7 @@ export const experience = [
     period: '2021 — Present',
     summary:
       'Leads regulated cloud migrations and landing-zone design for banks/FSIs in Malaysia and APAC, blending AWS platform engineering with policy-as-code aligned to BNM RMiT.',
-    logo: '/logo-softwareone.svg',
+    logo: '/logo-softwareone.png',
     highlights: [
       'Delivered RiverMeadow/VEEAM-led migrations when AWS MGN was unavailable, maintaining security baselines and minimizing downtime.',
       'Ran discovery + assessment with Cloudamize, TCO analysis, wave planning, and AWS Well-Architected gap closure.',
@@ -28,7 +28,7 @@ export const experience = [
     period: 'Nov 2019 — Oct 2022',
     summary:
       'Owned IaC, Kubernetes operations, and CI/CD pipelines across AWS and Azure; standardized backups, tagging, and compliance.',
-    logo: '/logo-accenture.svg',
+    logo: '/logo-accenture.png',
     highlights: [
       'Converted CloudFormation to Terraform; managed EC2/VM scale sets, load balancers, bastions, and secure root rotations.',
       'Implemented tag-compliance reporting, cost/performance tuning via CloudWatch + Trusted Advisor, and governance.',
@@ -42,7 +42,7 @@ export const experience = [
     period: 'Oct 2015 — Nov 2019',
     summary:
       'Handled incident/change management under ITIL, IAM governance, and AWS-hosted service reliability for enterprise apps.',
-    logo: '/logo-cognizant.svg',
+    logo: '/logo-cognizant.png',
     highlights: [
       'Ran major-incident coordination, post-mortems, and service restorations across application teams and vendors.',
       'Managed IAM roles/policies, SFTP setups, and access controls; oversaw Git branching and CI/CD pipeline health.',

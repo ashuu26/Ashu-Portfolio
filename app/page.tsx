@@ -137,11 +137,11 @@ export default function Page() {
               <div className="flex items-center justify-between gap-3">
                 <div className="flex items-center gap-3">
                   {role.logo ? (
-                    <div className="h-14 w-14 overflow-hidden rounded-2xl border border-white/10 bg-white/10 p-2 dark:bg-white/10">
+                    <div className="h-14 w-20 overflow-hidden rounded-2xl border border-slate-200/70 bg-white/95 p-2 shadow-sm dark:border-white/10 dark:bg-white/95">
                       <Image
                         src={role.logo}
                         alt={`${role.company} logo`}
-                        width={64}
+                        width={96}
                         height={64}
                         className="h-full w-full object-contain"
                       />
