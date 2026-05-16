@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { Linkedin, Mail } from 'lucide-react';
 import { ThemeToggle } from './theme-toggle';
 import { motion } from 'framer-motion';
@@ -21,7 +22,16 @@ export function Header() {
         className="pointer-events-auto flex w-full items-center justify-between gap-4 rounded-full border border-white/10 bg-white/80 px-5 py-3 shadow-lg backdrop-blur-xl dark:border-white/10 dark:bg-night/70"
       >
         <div className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-2xl bg-gradient-to-br from-pulse via-aurora to-ember shadow-glow" />
+          <div className="h-11 w-11 overflow-hidden rounded-full border border-white/30 bg-night shadow-glow">
+            <Image
+              src="/favicon.png"
+              alt="Ashu Saini logo"
+              width={88}
+              height={88}
+              className="h-full w-full object-cover"
+              priority
+            />
+          </div>
           <div>
             <p className="text-sm text-mist">Ashu Saini</p>
             <p className="font-semibold text-ink dark:text-cloud">Cloud Infrastructure & Migration Specialist</p>

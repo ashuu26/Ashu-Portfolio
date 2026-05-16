@@ -80,6 +80,14 @@ body {
   position: relative;
   overflow: hidden;
   isolation: isolate;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(240, 249, 255, 0.9) 52%, rgba(255, 251, 235, 0.78)),
+    url('/noise.svg');
+  backdrop-filter: blur(18px);
+}
+
+.dark .hero-visual {
+  background: transparent;
 }
 
 .hero-visual::before {
@@ -88,8 +96,12 @@ body {
   inset: -8%;
   background: url('/bg-clouds.svg') center/cover no-repeat;
   filter: saturate(1.1) blur(0px);
-  opacity: 0.9;
+  opacity: 0.12;
   z-index: -2;
+}
+
+.dark .hero-visual::before {
+  opacity: 0.9;
 }
 
 .hero-visual::after {

@@ -39,7 +39,7 @@ export default function Page() {
       <section className="section-shell pt-16 md:pt-20" id="about">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <motion.div
-            className="space-y-6 hero-visual rounded-3xl border border-white/10 p-8 shadow-glow"
+            className="space-y-6 hero-visual rounded-3xl border border-slate-200/70 p-8 shadow-card dark:border-white/10 dark:shadow-glow"
             initial="hidden"
             animate="show"
             variants={container}
