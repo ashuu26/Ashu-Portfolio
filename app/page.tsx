@@ -101,7 +101,7 @@ export default function Page() {
             <div className="absolute inset-0 bg-gradient-to-br from-pulse/20 via-aurora/15 to-ember/15" aria-hidden />
             <div className="relative h-full">
               <div className="absolute right-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-ink shadow-sm dark:bg-white/80">
-                AWS Certified
+                AWS & Azure Certified
               </div>
               <Image
                 src="/profile-headshot.jpg"

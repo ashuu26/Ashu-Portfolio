@@ -1,8 +1,8 @@
 export const hero = {
-  title: 'Cloud infrastructure leader focused on AWS migrations and day-2 reliability.',
+  title: 'Cloud infrastructure leader focused on Cloud (AWS/ Azure) migrations and day-2 reliability.',
   subtitle:
-    '11 years moving enterprise workloads to AWS, automating with Terraform, and hardening platforms with DR strategy, cost controls, and secure network architectures.',
-  badges: ['11+ Years Experience', 'AWS Cloud Migrations', 'Terraform Automation', 'DevOps & SRE'],
+    '11 years moving enterprise workloads to Cloud (AWS/ Azure), automating with Terraform, and hardening platforms with DR strategy, cost controls, and secure network architectures.',
+  badges: ['11+ Years Experience', 'Cloud (AWS/ Azure) Migrations', 'Terraform Automation', 'DevOps & SRE'],
 };
 
 export const experience = [
@@ -11,15 +11,15 @@ export const experience = [
     role: 'Expert Technology Infrastructure & Cloud Solution Architect',
     period: '2021 — Present',
     summary:
-      'Leads regulated cloud migrations and landing-zone design for banks/FSIs in Malaysia and APAC, blending AWS platform engineering with policy-as-code aligned to BNM RMiT.',
+      'Leads regulated Cloud (AWS/ Azure) migration programs, landing-zone architecture, and deployment readiness for banks/FSIs in Malaysia and APAC, combining AWS and Azure platform engineering with policy-as-code aligned to BNM RMiT.',
     logo: '/logo-softwareone.png',
     highlights: [
-      'Delivered RiverMeadow/VEEAM-led migrations when AWS MGN was unavailable, maintaining security baselines and minimizing downtime.',
-      'Ran discovery + assessment with Cloudamize, TCO analysis, wave planning, and AWS Well-Architected gap closure.',
-      'Built regulated AWS landing zones: VPC segmentation, VPN/Direct Connect, mTLS, centralized logging/backup, and automated guardrails.',
-      'Mapped RMiT controls to policy-as-code guardrails (egress, encryption, IAM least-privilege, logging retention) embedded in Terraform/GitOps pipelines.',
-      'Produced landing-zone reference designs and control evidence packs for compliance teams; enabled audit-ready posture with conformance checks.',
-      'Implemented CI policy checks and approved AMI whitelisting to block non-compliant changes before deploy.'
+      'Delivered RiverMeadow/VEEAM-led workload migrations when AWS MGN was unavailable, maintaining security baselines, rollback plans, and minimal downtime windows.',
+      'Ran discovery and assessment with Cloudamize, TCO analysis, application dependency mapping, migration wave planning, and AWS/Azure Well-Architected gap closure.',
+      'Designed Cloud (AWS/ Azure) landing zones with VPC/VNet segmentation, VPN/Direct Connect/ExpressRoute connectivity, mTLS, centralized logging, backup, and automated guardrails.',
+      'Mapped RMiT controls to policy-as-code guardrails for egress, encryption, IAM/RBAC least privilege, logging retention, and Terraform/GitOps deployment pipelines.',
+      'Produced landing-zone reference designs, migration runbooks, and control evidence packs for compliance teams; enabled audit-ready posture with conformance checks.',
+      'Implemented CI/CD policy checks, approved AMI/image whitelisting, and release gates to block non-compliant infrastructure changes before deployment.'
     ],
   },
   {
@@ -27,13 +27,13 @@ export const experience = [
     role: 'Cloud Operations Architect Specialist',
     period: 'Nov 2019 — Oct 2022',
     summary:
-      'Owned IaC, Kubernetes operations, and CI/CD pipelines across AWS and Azure; standardized backups, tagging, and compliance.',
+      'Owned IaC, Kubernetes operations, and CI/CD deployment pipelines across Cloud (AWS/ Azure); standardized backup, tagging, monitoring, governance, and compliance controls.',
     logo: '/logo-accenture.png',
     highlights: [
-      'Converted CloudFormation to Terraform; managed EC2/VM scale sets, load balancers, bastions, and secure root rotations.',
-      'Implemented tag-compliance reporting, cost/performance tuning via CloudWatch + Trusted Advisor, and governance.',
-      'Built Docker images, Jenkins pipelines, and Ansible playbooks to automate patching and delivery.',
-      'Guided clients on cloud adoption strategy, security oversight, and continuous improvement of operations.',
+      'Converted CloudFormation to Terraform and supported ARM/Bicep-aligned deployments; managed EC2/VM scale sets, load balancers, bastions, and secure root rotations.',
+      'Implemented tag-compliance reporting, cost optimization, performance tuning, CloudWatch/Azure Monitor observability, Trusted Advisor reviews, and governance dashboards.',
+      'Built Docker images, Jenkins/Azure DevOps pipelines, and Ansible playbooks to automate patching, application deployment, and environment promotion.',
+      'Guided clients on cloud adoption strategy, rehost/replatform migration paths, security oversight, and continuous improvement of operations.',
     ],
   },
   {
@@ -41,12 +41,12 @@ export const experience = [
     role: 'Tech Lead',
     period: 'Oct 2015 — Nov 2019',
     summary:
-      'Handled incident/change management under ITIL, IAM governance, and AWS-hosted service reliability for enterprise apps.',
+      'Handled ITIL incident/change management, IAM/RBAC governance, CI/CD deployment support, and Cloud (AWS/ Azure)-hosted service reliability for enterprise applications.',
     logo: '/logo-cognizant.png',
     highlights: [
-      'Ran major-incident coordination, post-mortems, and service restorations across application teams and vendors.',
-      'Managed IAM roles/policies, SFTP setups, and access controls; oversaw Git branching and CI/CD pipeline health.',
-      'Built and deployed Docker containers, Maven builds, and Tomcat releases; generated availability and MSR reports.',
+      'Ran major-incident coordination, post-mortems, root-cause analysis, and service restorations across application teams and vendors.',
+      'Managed IAM roles/policies, SFTP setups, RBAC access controls, Git branching, change approvals, and CI/CD pipeline health.',
+      'Built and deployed Docker containers, Maven builds, and Tomcat releases; generated SLA, availability, and monthly service review reports.',
     ],
   },
 ];
@@ -55,8 +55,8 @@ export const projects = [
   {
     name: 'Adaptive Cloud Landing Zone',
     description:
-      'Opinionated AWS blueprint with org guardrails, multi-account VPC topology, and policy packs mapped to BNM RMiT controls (encryption, egress, IAM, logging).',
-    stack: ['AWS', 'Terraform', 'Control Tower', 'RMiT'],
+      'Opinionated Cloud (AWS/ Azure) blueprint with org guardrails, multi-account VPC/VNet topology, and policy packs mapped to BNM RMiT controls (encryption, egress, IAM/RBAC, logging).',
+    stack: ['Cloud (AWS/ Azure)', 'Terraform', 'Control Tower', 'RMiT'],
     impact: '12min to provision a compliant sandbox; accelerates RMiT evidence with built-in policy checks and conformance packs.'
   },
   {
