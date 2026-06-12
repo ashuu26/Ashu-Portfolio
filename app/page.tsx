@@ -76,7 +76,7 @@ export default function Page() {
                 <ArrowUpRight size={16} />
               </Link>
               <a
-                href="https://www.linkedin.com/in/ashu-saini-bb96ba1a7"
+                href="https://www.linkedin.com/in/ashusaini-in"
                 target="_blank"
                 className="inline-flex items-center gap-2 rounded-full border border-white/10 px-5 py-3 text-sm text-ink/80 dark:text-cloud/80 hover:border-white/30"
               >
@@ -123,11 +123,11 @@ export default function Page() {
           title="Guiding platforms from design to day-2 success"
           copy="11-year track record across architecture, enablement, and resilient operations."
         />
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div className="grid items-stretch gap-6 lg:grid-cols-2">
           {experience.map((role, idx) => (
             <motion.div
               key={role.company}
-              className="card-surface p-6"
+              className="card-surface flex h-full flex-col p-6"
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, margin: '-50px' }}
@@ -157,11 +157,16 @@ export default function Page() {
                 </div>
               </div>
               <p className="mt-4 text-ink/80 dark:text-cloud/80">{role.summary}</p>
-              <ul className="mt-4 space-y-3 text-sm text-ink/80 dark:text-cloud/80">
+              <ul className="mt-5 grid gap-3 text-sm text-ink/80 dark:text-cloud/80">
                 {role.highlights.map((item) => (
-                  <li key={item} className="flex gap-3">
-                    <span className="mt-1 h-2 w-2 rounded-full bg-aurora" />
-                    <span>{item}</span>
+                  <li
+                    key={item}
+                    className="grid grid-cols-[1.75rem_1fr] gap-3 rounded-2xl border border-slate-200/70 bg-white/55 p-3 shadow-border dark:border-white/10 dark:bg-white/5"
+                  >
+                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-aurora/90 to-pulse/90 text-night shadow-sm">
+                      <ArrowUpRight size={14} strokeWidth={2.5} />
+                    </span>
+                    <span className="leading-relaxed">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -286,7 +291,7 @@ export default function Page() {
                 Email Ashu
               </a>
               <a
-                href="https://www.linkedin.com/in/ashu-saini-bb96ba1a7"
+                href="https://www.linkedin.com/in/ashusaini-in"
                 target="_blank"
                 className="inline-flex items-center gap-2 rounded-full border border-white/10 px-5 py-3 text-sm text-ink/80 dark:text-cloud/80 hover:border-white/30"
               >

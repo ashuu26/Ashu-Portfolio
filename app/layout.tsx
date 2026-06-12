@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: 'Ashu Saini | Cloud Infrastructure & Migration Specialist',
   description:
     'Ashu Saini—11 years leading Cloud (AWS/ Azure) migrations, Terraform automation, and resilient platform operations across APAC enterprises.',
-  metadataBase: new URL('https://www.linkedin.com/in/ashu-saini-bb96ba1a7'),
+  metadataBase: new URL('https://www.linkedin.com/in/ashusaini-in'),
   icons: {
     icon: '/favicon.png',
     shortcut: '/favicon.png',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: 'Ashu Saini | Cloud Infrastructure & Migration Specialist',
     description:
       '11 years building and operating Cloud (AWS/ Azure) platforms, disaster recovery, and IaC automation for enterprise workloads.',
-    url: 'https://www.linkedin.com/in/ashu-saini-bb96ba1a7',
+    url: 'https://www.linkedin.com/in/ashusaini-in',
     siteName: 'Ashu Saini Portfolio',
     images: [
       {

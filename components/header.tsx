@@ -60,7 +60,7 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <a
-            href="https://www.linkedin.com/in/ashu-saini-bb96ba1a7"
+            href="https://www.linkedin.com/in/ashusaini-in"
             target="_blank"
             className="glass-border inline-flex h-10 w-10 items-center justify-center text-ink/80 dark:text-cloud/90 transition hover:scale-105"
             aria-label="LinkedIn"

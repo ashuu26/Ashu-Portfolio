@@ -8,18 +8,21 @@ export const hero = {
 export const experience = [
   {
     company: 'SoftwareOne',
-    role: 'Expert Technology Infrastructure & Cloud Solution Architect',
-    period: '2021 — Present',
+    role: 'Expert Technology Infrastructure',
+    period: 'Nov 2022 — Present',
     summary:
       'Leads regulated Cloud (AWS/ Azure) migration programs, landing-zone architecture, and deployment readiness for banks/FSIs in Malaysia and APAC, combining AWS and Azure platform engineering with policy-as-code aligned to BNM RMiT.',
     logo: '/logo-softwareone.png',
     highlights: [
-      'Delivered RiverMeadow/VEEAM-led workload migrations when AWS MGN was unavailable, maintaining security baselines, rollback plans, and minimal downtime windows.',
-      'Ran discovery and assessment with Cloudamize, TCO analysis, application dependency mapping, migration wave planning, and AWS/Azure Well-Architected gap closure.',
-      'Designed Cloud (AWS/ Azure) landing zones with VPC/VNet segmentation, VPN/Direct Connect/ExpressRoute connectivity, mTLS, centralized logging, backup, and automated guardrails.',
-      'Mapped RMiT controls to policy-as-code guardrails for egress, encryption, IAM/RBAC least privilege, logging retention, and Terraform/GitOps deployment pipelines.',
-      'Produced landing-zone reference designs, migration runbooks, and control evidence packs for compliance teams; enabled audit-ready posture with conformance checks.',
-      'Implemented CI/CD policy checks, approved AMI/image whitelisting, and release gates to block non-compliant infrastructure changes before deployment.'
+      'Led AWS and Azure cloud migration initiatives using AWS MGN, Azure Migrate, Azure Site Recovery, Azure DMS, RiverMeadow, Veeam, and Cloudamize for discovery, dependency mapping, migration wave planning, and workload cutovers.',
+      'Architected secure and scalable AWS and Azure platforms spanning EC2, VPC, Security Groups, NACLs, Direct Connect, VPN, VPC Peering, Virtual Machines, VNet, NSG, Azure Firewall, ExpressRoute, VPN Gateway, and VNet Peering.',
+      'Built enterprise-scale AWS and Azure landing zones with organizational guardrails, multi-account/subscription governance, hub-and-spoke VPC/VNet design, and automated policy enforcement mapped to Bank Negara Malaysia RMiT controls.',
+      'Automated infrastructure provisioning and configuration management with Terraform for standardized, repeatable, and compliant Infrastructure-as-Code deployments across multi-cloud environments.',
+      'Implemented cloud operations, governance, and compliance frameworks using AWS Systems Manager, Azure Automation, Azure Arc, Azure Policy, Azure Monitor, and Log Analytics.',
+      'Designed disaster recovery and business continuity solutions with AWS Backup, Azure Backup, Azure Site Recovery, Recovery Services Vaults, and Geo-Redundant Storage aligned to RTO/RPO objectives.',
+      'Conducted cloud readiness assessments, TCO analysis, and migration business case evaluations aligned with the AWS Well-Architected Framework, Azure Well-Architected Framework, and Microsoft Cloud Adoption Framework.',
+      'Led technical consulting, post-sales engagements, and executive stakeholder discussions to translate business requirements into scalable cloud architectures and transformation roadmaps.',
+      'Delivered architecture workshops, migration discovery sessions, and cloud adoption enablement programs with Cloud Solution Architects, Professional Services, and Sales teams.'
     ],
   },
   {
@@ -27,13 +30,14 @@ export const experience = [
     role: 'Cloud Operations Architect Specialist',
     period: 'Nov 2019 — Oct 2022',
     summary:
-      'Owned IaC, Kubernetes operations, and CI/CD deployment pipelines across Cloud (AWS/ Azure); standardized backup, tagging, monitoring, governance, and compliance controls.',
+      'Owned IaC, Kubernetes operations, CI/CD deployment pipelines, monitoring, cost optimization, and operational handover across AWS and Azure environments.',
     logo: '/logo-accenture.png',
     highlights: [
-      'Converted CloudFormation to Terraform and supported ARM/Bicep-aligned deployments; managed EC2/VM scale sets, load balancers, bastions, and secure root rotations.',
-      'Implemented tag-compliance reporting, cost optimization, performance tuning, CloudWatch/Azure Monitor observability, Trusted Advisor reviews, and governance dashboards.',
-      'Built Docker images, Jenkins/Azure DevOps pipelines, and Ansible playbooks to automate patching, application deployment, and environment promotion.',
-      'Guided clients on cloud adoption strategy, rehost/replatform migration paths, security oversight, and continuous improvement of operations.',
+      'Authored and maintained Terraform scripts for EC2, VMs, load balancers, VPCs, bastion hosts, and scale sets across AWS and Azure; converted CloudFormation templates to Terraform and automated delivery via Azure DevOps and GitHub.',
+      'Managed Docker and Kubernetes clusters including pod health, upgrades, patching, and AMI updates.',
+      'Built Jenkins CI/CD pipelines, deployed the Amdocs suite on Vodafone AWS, managed Docker images with Dockerfiles and Docker Compose, and developed Ansible playbooks for automated patching with Systems Manager Patch Manager.',
+      'Monitored environment health with CloudWatch, optimized performance and cost with AWS Trusted Advisor, managed root credential rotation through CyberArk, and implemented tag-compliance strategies.',
+      'Worked with SageMaker and QuickSight analytics, configured Cassandra clusters, provided security oversight, led knowledge transitions, and created SOPs for support teams.',
     ],
   },
   {
@@ -41,12 +45,13 @@ export const experience = [
     role: 'Tech Lead',
     period: 'Oct 2015 — Nov 2019',
     summary:
-      'Handled ITIL incident/change management, IAM/RBAC governance, CI/CD deployment support, and Cloud (AWS/ Azure)-hosted service reliability for enterprise applications.',
+      'Managed ITIL-aligned incident/change operations, IAM and Active Directory access controls, CI/CD deployment support, and AWS-hosted service reliability for enterprise applications.',
     logo: '/logo-cognizant.png',
     highlights: [
-      'Ran major-incident coordination, post-mortems, root-cause analysis, and service restorations across application teams and vendors.',
-      'Managed IAM roles/policies, SFTP setups, RBAC access controls, Git branching, change approvals, and CI/CD pipeline health.',
-      'Built and deployed Docker containers, Maven builds, and Tomcat releases; generated SLA, availability, and monthly service review reports.',
+      'Managed L1/L2 incident and change management aligned with ITIL, coordinating major incidents, emergency deployments, IIS-level configuration changes, and critical production issue resolution with vendors.',
+      'Administered IAM roles, policies, and Active Directory groups; enforced resource tagging and access control strategies; managed network-shared path permissions and SFTP connections.',
+      'Automated build and deployment pipelines with Jenkins and Git; built and deployed Docker containers; created JAR/WAR files with Maven and deployed to Apache Tomcat across DEV, QA, and UAT environments.',
+      'Used AWS services including EC2, S3, IAM, AMI, ELB, VPC, and CloudWatch to support fault-tolerant infrastructure; collaborated with SQL teams on database deployments and produced operational and monthly service reports.',
     ],
   },
 ];

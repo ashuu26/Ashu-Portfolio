@@ -10,7 +10,7 @@ export function Footer() {
           <div className="flex flex-wrap items-center gap-2">
             <span>Let’s connect:</span>
             <a
-              href="https://www.linkedin.com/in/ashu-saini-bb96ba1a7"
+              href="https://www.linkedin.com/in/ashusaini-in"
               className="font-medium text-ink underline-offset-4 transition hover:text-ink/90 hover:underline dark:text-cloud"
               target="_blank"
               rel="noreferrer"
@@ -31,7 +31,7 @@ export function Footer() {
             <Mail size={18} />
           </a>
           <a
-            href="https://www.linkedin.com/in/ashu-saini-bb96ba1a7"
+            href="https://www.linkedin.com/in/ashusaini-in"
             className="text-ink/70 transition hover:text-ink dark:text-cloud/70 dark:hover:text-cloud"
             target="_blank"
             rel="noreferrer"
