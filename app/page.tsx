@@ -104,7 +104,7 @@ export default function Page() {
                 AWS & Azure Certified
               </div>
               <Image
-                src="/profile-headshot.jpg"
+                src="/profile-headshot-2026.jpg"
                 alt="Ashu Saini professional portrait"
                 width={1200}
                 height={1400}
