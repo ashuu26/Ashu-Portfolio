@@ -10,7 +10,7 @@ const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope', displa
 const space = Space_Grotesk({ subsets: ['latin'], variable: '--font-space', display: 'swap' });
 
 export const metadata: Metadata = {
-  title: 'Ashu Saini | Cloud Infrastructure & Migration Specialist',
+  title: 'Ashu Saini | Cloud Solutions Architect',
   description:
     'Ashu Saini—11 years leading Cloud (AWS/ Azure) migrations, Terraform automation, and resilient platform operations across APAC enterprises.',
   metadataBase: new URL('https://www.linkedin.com/in/ashusaini-in'),
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     apple: '/favicon.png'
   },
   openGraph: {
-    title: 'Ashu Saini | Cloud Infrastructure & Migration Specialist',
+    title: 'Ashu Saini | Cloud Solutions Architect',
     description:
       '11 years building and operating Cloud (AWS/ Azure) platforms, disaster recovery, and IaC automation for enterprise workloads.',
     url: 'https://www.linkedin.com/in/ashusaini-in',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Cloud Consultant Portfolio'
+        alt: 'Cloud Solutions Architect Portfolio'
       }
     ],
     locale: 'en_US',
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cloud Consultant Portfolio',
-    description: 'Projects, experience, and credentials of a cloud consultant.',
+    title: 'Cloud Solutions Architect Portfolio',
+    description: 'Projects, experience, and credentials of a cloud solutions architect.',
     images: ['/og-image.png']
   },
 };

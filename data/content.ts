@@ -1,5 +1,5 @@
 export const hero = {
-  title: 'Cloud infrastructure leader focused on Cloud (AWS/ Azure) migrations and day-2 reliability.',
+  title: 'Architecting the Cloud. Accelerating Business. Delivering Results.',
   subtitle:
     '11 years moving enterprise workloads to Cloud (AWS/ Azure), automating with Terraform, and hardening platforms with DR strategy, cost controls, and secure network architectures.',
   badges: ['11+ Years Experience', 'Cloud (AWS/ Azure) Migrations', 'Terraform Automation', 'DevOps & SRE'],
@@ -8,21 +8,21 @@ export const hero = {
 export const experience = [
   {
     company: 'SoftwareOne',
-    role: 'Expert Technology Infrastructure',
+    role: 'Associate Solutions Architect',
     period: 'Nov 2022 — Present',
     summary:
-      'Leads regulated Cloud (AWS/ Azure) migration programs, landing-zone architecture, and deployment readiness for banks/FSIs in Malaysia and APAC, combining AWS and Azure platform engineering with policy-as-code aligned to BNM RMiT.',
+      'Leads AWS and Azure migration programs for regulated financial services, combining platform architecture, landing-zone design, and cloud adoption strategy for clients across Malaysia and APAC.',
     logo: '/logo-softwareone.png',
     highlights: [
-      'Led AWS and Azure cloud migration initiatives using AWS MGN, Azure Migrate, Azure Site Recovery, Azure DMS, RiverMeadow, Veeam, and Cloudamize for discovery, dependency mapping, migration wave planning, and workload cutovers.',
-      'Architected secure and scalable AWS and Azure platforms spanning EC2, VPC, Security Groups, NACLs, Direct Connect, VPN, VPC Peering, Virtual Machines, VNet, NSG, Azure Firewall, ExpressRoute, VPN Gateway, and VNet Peering.',
-      'Built enterprise-scale AWS and Azure landing zones with organizational guardrails, multi-account/subscription governance, hub-and-spoke VPC/VNet design, and automated policy enforcement mapped to Bank Negara Malaysia RMiT controls.',
-      'Automated infrastructure provisioning and configuration management with Terraform for standardized, repeatable, and compliant Infrastructure-as-Code deployments across multi-cloud environments.',
-      'Implemented cloud operations, governance, and compliance frameworks using AWS Systems Manager, Azure Automation, Azure Arc, Azure Policy, Azure Monitor, and Log Analytics.',
-      'Designed disaster recovery and business continuity solutions with AWS Backup, Azure Backup, Azure Site Recovery, Recovery Services Vaults, and Geo-Redundant Storage aligned to RTO/RPO objectives.',
-      'Conducted cloud readiness assessments, TCO analysis, and migration business case evaluations aligned with the AWS Well-Architected Framework, Azure Well-Architected Framework, and Microsoft Cloud Adoption Framework.',
-      'Led technical consulting, post-sales engagements, and executive stakeholder discussions to translate business requirements into scalable cloud architectures and transformation roadmaps.',
-      'Delivered architecture workshops, migration discovery sessions, and cloud adoption enablement programs with Cloud Solution Architects, Professional Services, and Sales teams.'
+      'Lead enterprise-scale AWS and Azure cloud migration programs spanning 250+ workloads across 15+ client accounts, leveraging AWS MGN, Azure Migrate, ASR, RiverMeadow and Veeam to achieve <2-hour RTO and zero unplanned downtime.',
+      'Architect secure, resilient multi-cloud platforms (AWS VPC, Direct Connect, Transit Gateway; Azure VNet, ExpressRoute, Firewall) delivering 99.9% uptime SLA across hybrid environments for 12+ enterprise clients.',
+      'Design enterprise Landing Zones with hub-and-spoke topology, AWS Control Tower, IAM Identity Center, Azure Entra ID, SCPs and RBAC, mapping governance controls to BNM RMiT requirements and cutting compliance gaps by ~40%.',
+      'Author end-to-end architecture documentation — HLD, LLD, network/IAM design, DR runbooks and operational handover packages — and lead customer discovery workshops, architecture whiteboarding and design authority/risk review sessions with executive stakeholders.',
+      'Automate infrastructure provisioning with Terraform IaC, cutting manual provisioning time by 60% and governing 500+ managed resources via AWS Systems Manager, Azure Automation, Azure Arc and Azure Policy.',
+      'Design and validate Disaster Recovery solutions (AWS Backup, Azure Site Recovery, Geo-Redundant Storage) meeting defined RTO/RPO targets for 12+ enterprise clients, including failover automation and DR test exercises.',
+      'Lead cloud readiness assessments, dependency mapping and migration-factory wave/cutover/rollback planning for 10+ clients, producing TCO analyses and modernization roadmaps that drive 25-35% cost savings vs. on-prem baselines.',
+      'Drive FinOps and Zero Trust Architecture initiatives — right-sizing, Reserved Instance strategy and identity/encryption hardening — saving clients an average of $150K+ annually.',
+      'Own pre-sales technical solutioning for customer pursuits: author RFI/RFP/RFQ responses (architecture designs, implementation methodology, effort estimates, risk, SOW inputs), run PoCs/demos, and partner with Sales and Professional Services to close and deliver 8+ cloud transformation programs.'
     ],
   },
   {
@@ -30,28 +30,29 @@ export const experience = [
     role: 'Cloud Operations Architect Specialist',
     period: 'Nov 2019 — Oct 2022',
     summary:
-      'Owned IaC, Kubernetes operations, CI/CD deployment pipelines, monitoring, cost optimization, and operational handover across AWS and Azure environments.',
+      'Delivered infrastructure automation, platform operations, and reliability engineering across AWS and Azure environments, strengthening DevOps delivery and day-2 operational readiness.',
     logo: '/logo-accenture.png',
     highlights: [
-      'Authored and maintained Terraform scripts for EC2, VMs, load balancers, VPCs, bastion hosts, and scale sets across AWS and Azure; converted CloudFormation templates to Terraform and automated delivery via Azure DevOps and GitHub.',
-      'Managed Docker and Kubernetes clusters including pod health, upgrades, patching, and AMI updates.',
-      'Built Jenkins CI/CD pipelines, deployed the Amdocs suite on Vodafone AWS, managed Docker images with Dockerfiles and Docker Compose, and developed Ansible playbooks for automated patching with Systems Manager Patch Manager.',
-      'Monitored environment health with CloudWatch, optimized performance and cost with AWS Trusted Advisor, managed root credential rotation through CyberArk, and implemented tag-compliance strategies.',
-      'Worked with SageMaker and QuickSight analytics, configured Cassandra clusters, provided security oversight, led knowledge transitions, and created SOPs for support teams.',
+      'Author and maintain Terraform modules for 50+ infrastructure components (EC2, VMs, Load Balancers, VPCs, Scale Sets) across AWS and Azure; migrate 30+ CloudFormation templates to Terraform to standardize IaC practices.',
+      'Manage Docker and Kubernetes clusters for a Vodafone production environment serving millions of users, overseeing pod health monitoring, rolling upgrades, patching and AMI lifecycle management.',
+      'Build and maintain CI/CD pipelines with Jenkins for the Amdocs suite on AWS, reducing deployment lead time from 4 hours to under 45 minutes; manage Docker images via Dockerfiles and Docker Compose.',
+      'Develop Ansible playbooks for automated OS patching across 200+ servers, achieving 95%+ patch compliance with Systems Manager Patch Manager; monitor environment health via CloudWatch dashboards.',
+      'Manage root credential rotation via CyberArk/MasterSAM and enforce tag compliance strategies across AWS accounts for security and cost allocation governance.',
+      'Deliver AI/ML infrastructure support using SageMaker and QuickSight analytics; configure Cassandra clusters; author SOPs for Level 2 support teams.'
     ],
   },
   {
     company: 'Cognizant',
-    role: 'Tech Lead',
+    role: 'Technical Lead',
     period: 'Oct 2015 — Nov 2019',
     summary:
-      'Managed ITIL-aligned incident/change operations, IAM and Active Directory access controls, CI/CD deployment support, and AWS-hosted service reliability for enterprise applications.',
+      'Led ITIL-aligned operations, production support, and application delivery for enterprise workloads, with a strong focus on incident management, access governance, and AWS infrastructure reliability.',
     logo: '/logo-cognizant.png',
     highlights: [
-      'Managed L1/L2 incident and change management aligned with ITIL, coordinating major incidents, emergency deployments, IIS-level configuration changes, and critical production issue resolution with vendors.',
-      'Administered IAM roles, policies, and Active Directory groups; enforced resource tagging and access control strategies; managed network-shared path permissions and SFTP connections.',
-      'Automated build and deployment pipelines with Jenkins and Git; built and deployed Docker containers; created JAR/WAR files with Maven and deployed to Apache Tomcat across DEV, QA, and UAT environments.',
-      'Used AWS services including EC2, S3, IAM, AMI, ELB, VPC, and CloudWatch to support fault-tolerant infrastructure; collaborated with SQL teams on database deployments and produced operational and monthly service reports.',
+      'Manage L1/L2 Incident & Change Management (ITIL) for a production environment with 99.5% uptime, coordinating 50+ major incidents and emergency deployments with cross-functional vendor teams.',
+      'Administer IAM roles, policies and Active Directory groups for 300+ users; enforce RBAC strategies, SFTP access control and network-shared path permissions.',
+      'Automate build and deployment pipelines using Jenkins and Git; build and deploy Docker containers; create JAR/WAR artifacts with Maven deployed to Apache Tomcat across DEV/QA/UAT environments.',
+      'Design fault-tolerant infrastructure using AWS EC2, S3, IAM, ELB, VPC and CloudWatch; collaborate with SQL database teams on production deployments; generate Monthly Service Reports (MSR).'
     ],
   },
 ];

@@ -24,6 +24,14 @@ export function Footer() {
             >
               Email
             </a>
+            <span className="opacity-50">|</span>
+            <a
+              href="/AshuSainiResume.pdf"
+              download="Ashu-Saini-Resume.pdf"
+              className="font-medium text-ink underline-offset-4 transition hover:text-ink/90 hover:underline dark:text-cloud"
+            >
+              Download resume
+            </a>
           </div>
         </div>
         <div className="flex items-center gap-3">

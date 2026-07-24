@@ -38,7 +38,7 @@ export function Header() {
           </div>
           <div>
             <p className="text-sm text-mist">Ashu Saini</p>
-            <p className="font-semibold text-ink dark:text-cloud">Cloud Infrastructure & Migration Specialist</p>
+            <p className="font-semibold text-ink dark:text-cloud">Cloud Solutions Architect</p>
           </div>
         </div>
 
