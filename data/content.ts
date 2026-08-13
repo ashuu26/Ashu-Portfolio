@@ -7,52 +7,68 @@ export const hero = {
 
 export const experience = [
   {
-    company: 'SoftwareOne',
-    role: 'Associate Solutions Architect',
-    period: 'Nov 2022 — Present',
+    company: 'Software One Experts Sdn Bhd, KL',
+    role: 'Sr. Expert Technology Infrastructure - Cloud',
+    period: 'Sep 2024 — Present',
     summary:
-      'Leads AWS and Azure migration programs for regulated financial services, combining platform architecture, landing-zone design, and cloud adoption strategy for clients across Malaysia and APAC.',
+      'Primary technical lead for presales and enterprise cloud transformation programs across Malaysia, designing AWS and Azure solutions with secure architecture, modernization roadmaps, and governance alignment.',
     logo: '/logo-softwareone.png',
     highlights: [
-      'Lead enterprise-scale AWS and Azure cloud migration programs spanning 250+ workloads across 15+ client accounts, leveraging AWS MGN, Azure Migrate, ASR, RiverMeadow and Veeam to achieve <2-hour RTO and zero unplanned downtime.',
-      'Architect secure, resilient multi-cloud platforms (AWS VPC, Direct Connect, Transit Gateway; Azure VNet, ExpressRoute, Firewall) delivering 99.9% uptime SLA across hybrid environments for 12+ enterprise clients.',
-      'Design enterprise Landing Zones with hub-and-spoke topology, AWS Control Tower, IAM Identity Center, Azure Entra ID, SCPs and RBAC, mapping governance controls to BNM RMiT requirements and cutting compliance gaps by ~40%.',
-      'Author end-to-end architecture documentation — HLD, LLD, network/IAM design, DR runbooks and operational handover packages — and lead customer discovery workshops, architecture whiteboarding and design authority/risk review sessions with executive stakeholders.',
-      'Automate infrastructure provisioning with Terraform IaC, cutting manual provisioning time by 60% and governing 500+ managed resources via AWS Systems Manager, Azure Automation, Azure Arc and Azure Policy.',
-      'Design and validate Disaster Recovery solutions (AWS Backup, Azure Site Recovery, Geo-Redundant Storage) meeting defined RTO/RPO targets for 12+ enterprise clients, including failover automation and DR test exercises.',
-      'Lead cloud readiness assessments, dependency mapping and migration-factory wave/cutover/rollback planning for 10+ clients, producing TCO analyses and modernization roadmaps that drive 25-35% cost savings vs. on-prem baselines.',
-      'Drive FinOps and Zero Trust Architecture initiatives — right-sizing, Reserved Instance strategy and identity/encryption hardening — saving clients an average of $150K+ annually.',
-      'Own pre-sales technical solutioning for customer pursuits: author RFI/RFP/RFQ responses (architecture designs, implementation methodology, effort estimates, risk, SOW inputs), run PoCs/demos, and partner with Sales and Professional Services to close and deliver 8+ cloud transformation programs.'
+      'Served as primary technical lead for presales, partnering with Sales and Professional Services to understand customer requirements and design AWS/Azure solutions, contributing to 8+ cloud transformation programmes.',
+      'Authored technical responses for 4+ complex RFPs, translating business requirements into AWS/Azure architectures and actionable modernization roadmaps.',
+      'Led customer discovery sessions and executive workshops, presenting cloud solutions and driving technical alignment and project buy-in.',
+      'Led cloud migration programmes covering 250+ workloads across 15+ client accounts using AWS MGN, Azure Migrate, ASR, RiverMeadow, and Veeam, achieving <2-hour RTO with zero unplanned downtime during cutovers.',
+      'Designed hybrid-cloud architectures using AWS VPC, Direct Connect, VPN, Azure VNet, ExpressRoute, and Azure Firewall, supporting 99.9% availability requirements.',
+      'Designed AWS Landing Zones with hub-and-spoke architecture and automated governance controls aligned with BNM RMiT, reducing compliance gaps by approximately 40%.',
+      'Applied AI/ML and Generative AI fundamentals to assess enterprise AI use cases and understand how AI capabilities can complement cloud solutions.',
+      'Evaluated AWS AI services, including Amazon Bedrock, based on business use cases, functionality, security, responsible AI, and cost considerations.',
+      'Applied foundational concepts of prompt engineering, RAG, AI security, privacy, governance, responsible AI, model selection, performance, scalability, and cost optimization when evaluating potential AWS-based AI solutions.'
     ],
   },
   {
-    company: 'Accenture',
+    company: 'Software One India Private Limited',
+    role: 'Cloud Consultant',
+    period: 'Nov 2022 — Sep 2024',
+    summary:
+      'Designed, delivered, and governed enterprise-grade AWS and Azure solutions for FSI clients, spanning assessments, infrastructure automation, migrations, and cost optimization.',
+    logo: '/logo-softwareone.png',
+    highlights: [
+      'Designed and delivered scalable, secure, enterprise-grade AWS solutions for leading FSI organizations.',
+      'Architected and delivered a robust, enterprise-grade AWS cloud solution for a top-tier FSI.',
+      'Oversaw delivery of proposed solutions end to end, providing architectural guidance to delivery teams, resolving technical escalations, and ensuring successful implementation and client satisfaction across 12+ enterprise engagements.',
+      'Automated infrastructure provisioning with Terraform and CloudFormation across multi-cloud environments, reducing manual provisioning time by 60%; implemented governance via AWS Systems Manager, Azure Automation, Azure Arc, and Azure Policy for 500+ resources.',
+      'Conducted Cloud Readiness Assessments and TCO analyses for 10+ clients, producing roadmaps that drove 25-35% cost savings; identified Reserved Instance and right-sizing opportunities saving clients an average of $150K+ annually.',
+      'Migrated Linux workloads (RHEL, Ubuntu, CentOS) to AWS/Azure, configuring DNS, LDAP, and TCP/IP networking within hybrid architectures; remediated critical security vulnerabilities and performance bottlenecks on the Sun Life engagement.'
+    ],
+  },
+  {
+    company: 'Accenture Solutions Private Limited',
     role: 'Cloud Operations Architect Specialist',
     period: 'Nov 2019 — Oct 2022',
     summary:
       'Delivered infrastructure automation, platform operations, and reliability engineering across AWS and Azure environments, strengthening DevOps delivery and day-2 operational readiness.',
     logo: '/logo-accenture.png',
     highlights: [
-      'Author and maintain Terraform modules for 50+ infrastructure components (EC2, VMs, Load Balancers, VPCs, Scale Sets) across AWS and Azure; migrate 30+ CloudFormation templates to Terraform to standardize IaC practices.',
-      'Manage Docker and Kubernetes clusters for a Vodafone production environment serving millions of users, overseeing pod health monitoring, rolling upgrades, patching and AMI lifecycle management.',
-      'Build and maintain CI/CD pipelines with Jenkins for the Amdocs suite on AWS, reducing deployment lead time from 4 hours to under 45 minutes; manage Docker images via Dockerfiles and Docker Compose.',
-      'Develop Ansible playbooks for automated OS patching across 200+ servers, achieving 95%+ patch compliance with Systems Manager Patch Manager; monitor environment health via CloudWatch dashboards.',
-      'Manage root credential rotation via CyberArk/MasterSAM and enforce tag compliance strategies across AWS accounts for security and cost allocation governance.',
-      'Deliver AI/ML infrastructure support using SageMaker and QuickSight analytics; configure Cassandra clusters; author SOPs for Level 2 support teams.'
+      'Authored and maintained Terraform modules for 50+ infrastructure components (EC2, VMs, Load Balancers, VPCs, Scale Sets) across AWS and Azure; migrated 30+ CloudFormation templates to Terraform to standardise IaC practices.',
+      'Managed Docker and Kubernetes clusters for a Vodafone production environment serving millions of users, covering pod health monitoring, rolling upgrades, patching, and AMI lifecycle management.',
+      'Built and maintained CI/CD pipelines using Jenkins and GitLab for the Amdocs suite on AWS, reducing deployment lead time from 4 hours to under 45 minutes.',
+      'Developed Ansible playbooks for automated OS patching across 200+ servers, achieving 95%+ patch compliance with Systems Manager Patch Manager; monitored environment health via CloudWatch dashboards.',
+      'Managed root credential rotation via CyberArk/MasterSAM and enforced tag compliance across AWS accounts for security and cost allocation governance.',
+      'Supported AI/ML infrastructure using SageMaker and QuickSight; configured Cassandra clusters and authored SOPs for L2 support teams.'
     ],
   },
   {
-    company: 'Cognizant',
-    role: 'Technical Lead',
+    company: 'Cognizant Technology Solutions India Private Limited',
+    role: 'Tech Lead - Cloud & Infrastructure',
     period: 'Oct 2015 — Nov 2019',
     summary:
       'Led ITIL-aligned operations, production support, and application delivery for enterprise workloads, with a strong focus on incident management, access governance, and AWS infrastructure reliability.',
     logo: '/logo-cognizant.png',
     highlights: [
-      'Manage L1/L2 Incident & Change Management (ITIL) for a production environment with 99.5% uptime, coordinating 50+ major incidents and emergency deployments with cross-functional vendor teams.',
-      'Administer IAM roles, policies and Active Directory groups for 300+ users; enforce RBAC strategies, SFTP access control and network-shared path permissions.',
-      'Automate build and deployment pipelines using Jenkins and Git; build and deploy Docker containers; create JAR/WAR artifacts with Maven deployed to Apache Tomcat across DEV/QA/UAT environments.',
-      'Design fault-tolerant infrastructure using AWS EC2, S3, IAM, ELB, VPC and CloudWatch; collaborate with SQL database teams on production deployments; generate Monthly Service Reports (MSR).'
+      'Managed L1/L2 Incident and Change Management (ITIL) for a production environment with 99.5% uptime; coordinated 50+ major incidents and emergency deployments with cross-functional vendor teams.',
+      'Administered IAM roles, policies, and Active Directory groups for 300+ users; enforced RBAC, SFTP access control, and network share permissions.',
+      'Automated build and deployment pipelines using Jenkins and Git; built and deployed Docker containers and Maven artefacts (JAR/WAR) to Apache Tomcat across DEV/QA/UAT environments.',
+      'Designed fault-tolerant infrastructure using AWS EC2, S3, IAM, ELB, VPC, and CloudWatch; collaborated with SQL database teams on production deployments and produced Monthly Service Reports.'
     ],
   },
 ];
@@ -82,6 +98,7 @@ export const projects = [
 ];
 
 export const credentials = [
+  { title: 'AWS Certified AI Practitioner', issuer: 'Amazon Web Services', year: 2026 },
   { title: 'AWS Certified Cloud Practitioner', issuer: 'Amazon Web Services', year: 2023 },
   { title: 'Certification of Completion: AWS Solutions Architect', issuer: 'Amazon Web Services', year: 2020 },
   { title: 'HashiCorp Certified: Terraform Associate', issuer: 'HashiCorp', year: 2022 },

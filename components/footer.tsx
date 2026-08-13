@@ -26,8 +26,8 @@ export function Footer() {
             </a>
             <span className="opacity-50">|</span>
             <a
-              href="/AshuSainiResume.pdf"
-              download="Ashu-Saini-Resume.pdf"
+              href="/Ashu-Cloud-Consultant.pdf"
+              download="Ashu-Cloud-Consultant.pdf"
               className="font-medium text-ink underline-offset-4 transition hover:text-ink/90 hover:underline dark:text-cloud"
             >
               Download resume
