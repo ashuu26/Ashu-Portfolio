@@ -46,7 +46,7 @@ export default function Page() {
           >
             <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.2em] text-ink/70 dark:text-cloud/70">
               <Sparkles size={14} />
-              Cloud Consultant
+              Solutions Architect
             </div>
             <h1 className="text-4xl font-bold leading-tight text-ink dark:text-cloud sm:text-5xl lg:text-6xl">
               {hero.title}
@@ -83,8 +83,8 @@ export default function Page() {
                 LinkedIn profile
               </a>
               <a
-                href="/Ashu-Cloud-Consultant.pdf"
-                download="Ashu-Cloud-Consultant.pdf"
+                href="/Ashu-Saini-Resume.pdf"
+                download="Ashu-Saini-Resume.pdf"
                 className="inline-flex items-center gap-2 rounded-full bg-white/90 px-5 py-3 text-sm font-semibold text-ink shadow-border hover:-translate-y-0.5 transition dark:bg-white/10 dark:text-cloud"
               >
                 Download resume

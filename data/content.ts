@@ -8,7 +8,7 @@ export const hero = {
 export const experience = [
   {
     company: 'Software One Experts Sdn Bhd, KL',
-    role: 'Sr. Expert Technology Infrastructure - Cloud',
+    role: 'Sr. Cloud Consultant',
     period: 'Sep 2024 — Present',
     summary:
       'Primary technical lead for presales and enterprise cloud transformation programs across Malaysia, designing AWS and Azure solutions with secure architecture, modernization roadmaps, and governance alignment.',
@@ -98,9 +98,9 @@ export const projects = [
 ];
 
 export const credentials = [
+  { title: 'AWS Certified Solutions Architect - Associate', issuer: 'Amazon Web Services', year: 2026 },
   { title: 'AWS Certified AI Practitioner', issuer: 'Amazon Web Services', year: 2026 },
   { title: 'AWS Certified Cloud Practitioner', issuer: 'Amazon Web Services', year: 2023 },
-  { title: 'Certification of Completion: AWS Solutions Architect', issuer: 'Amazon Web Services', year: 2020 },
   { title: 'HashiCorp Certified: Terraform Associate', issuer: 'HashiCorp', year: 2022 },
   { title: 'Azure Fundamentals (AZ-900)', issuer: 'Microsoft', year: 2020 },
   { title: 'Azure Data Fundamentals', issuer: 'Microsoft', year: 2021 },
