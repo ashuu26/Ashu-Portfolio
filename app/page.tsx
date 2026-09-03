@@ -93,26 +93,62 @@ export default function Page() {
             </div>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0, transition: { delay: 0.12 } }}
-            className="card-surface relative overflow-hidden p-0"
-          >
-            <div className="absolute inset-0 bg-gradient-to-br from-pulse/20 via-aurora/15 to-ember/15" aria-hidden />
-            <div className="relative h-full">
-              <div className="absolute right-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-ink shadow-sm dark:bg-white/80">
-                AWS & Azure Certified
+          <div className="flex h-full flex-col gap-4">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0, transition: { delay: 0.12 } }}
+              className="card-surface relative flex-1 overflow-hidden p-0"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-pulse/20 via-aurora/15 to-ember/15" aria-hidden />
+              <div className="relative h-full">
+                <div className="absolute right-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-ink shadow-sm dark:bg-white/80">
+                  {credentials.length}x Certified
+                </div>
+                <Image
+                  src="/profile-headshot-2026.jpg"
+                  alt="Ashu Saini professional portrait"
+                  width={1200}
+                  height={1400}
+                  className="h-full w-full object-cover"
+                  priority
+                />
               </div>
-              <Image
-                src="/profile-headshot-2026.jpg"
-                alt="Ashu Saini professional portrait"
-                width={1200}
-                height={1400}
-                className="h-full w-full object-cover"
-                priority
-              />
-            </div>
-          </motion.div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0, transition: { delay: 0.3 } }}
+              className="card-surface flex flex-nowrap items-center justify-center gap-3 overflow-x-auto px-4 py-4 sm:justify-between sm:gap-4"
+            >
+              {credentials.map((cert) =>
+                cert.badge ? (
+                  <div
+                    key={cert.title}
+                    title={`${cert.title} — ${cert.issuer}`}
+                    className="group h-14 w-14 shrink-0 [perspective:800px] sm:h-16 sm:w-16 lg:h-20 lg:w-20"
+                  >
+                    <div className="relative h-full w-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                      <div className="absolute inset-0 overflow-hidden rounded-2xl border border-slate-200/70 bg-white p-1.5 shadow-sm [backface-visibility:hidden] dark:border-white/10">
+                        <Image
+                          src={cert.badge}
+                          alt={`${cert.title} badge`}
+                          width={160}
+                          height={160}
+                          className="h-full w-full object-contain"
+                        />
+                      </div>
+                      <div className="absolute inset-0 flex flex-col items-center justify-center gap-0.5 rounded-2xl border border-slate-200/70 bg-white p-1 text-center shadow-sm [backface-visibility:hidden] [transform:rotateY(180deg)] dark:border-white/10 dark:bg-night">
+                        <span className="text-[9px] font-semibold leading-tight text-ink dark:text-cloud sm:text-[10px]">
+                          {cert.issuer}
+                        </span>
+                        <span className="text-[9px] text-mist sm:text-[10px]">{cert.year}</span>
+                      </div>
+                    </div>
+                  </div>
+                ) : null
+              )}
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -224,12 +260,23 @@ export default function Page() {
             />
             <div className="space-y-4">
               {credentials.map((cert) => (
-                <div key={cert.title} className="card-surface flex items-center justify-between px-5 py-4">
-                  <div>
+                <div key={cert.title} className="card-surface flex items-center gap-4 px-5 py-4">
+                  {cert.badge ? (
+                    <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl border border-slate-200/70 bg-white/95 p-2 shadow-sm dark:border-white/10">
+                      <Image
+                        src={cert.badge}
+                        alt={`${cert.title} badge`}
+                        width={160}
+                        height={160}
+                        className="h-full w-full object-contain"
+                      />
+                    </div>
+                  ) : null}
+                  <div className="min-w-0 flex-1">
                     <p className="text-sm text-mist">{cert.issuer}</p>
-                    <p className="text-lg font-semibold text-ink dark:text-cloud">{cert.title}</p>
+                    <p className="text-lg font-semibold leading-snug text-ink dark:text-cloud">{cert.title}</p>
                   </div>
-                  <span className="rounded-full bg-white/10 px-3 py-1 text-sm text-ink/80 dark:text-cloud/80">{cert.year}</span>
+                  <span className="shrink-0 rounded-full bg-white/10 px-3 py-1 text-sm text-ink/80 dark:text-cloud/80">{cert.year}</span>
                 </div>
               ))}
             </div>

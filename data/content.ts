@@ -98,12 +98,42 @@ export const projects = [
 ];
 
 export const credentials = [
-  { title: 'AWS Certified Solutions Architect - Associate', issuer: 'Amazon Web Services', year: 2026 },
-  { title: 'AWS Certified AI Practitioner', issuer: 'Amazon Web Services', year: 2026 },
-  { title: 'AWS Certified Cloud Practitioner', issuer: 'Amazon Web Services', year: 2023 },
-  { title: 'HashiCorp Certified: Terraform Associate', issuer: 'HashiCorp', year: 2022 },
-  { title: 'Azure Fundamentals (AZ-900)', issuer: 'Microsoft', year: 2020 },
-  { title: 'Azure Data Fundamentals', issuer: 'Microsoft', year: 2021 },
+  {
+    title: 'AWS Certified Solutions Architect - Associate',
+    issuer: 'Amazon Web Services',
+    year: 2026,
+    badge: '/aws-certified-solutions-architect-associate.png',
+  },
+  {
+    title: 'AWS Certified AI Practitioner',
+    issuer: 'Amazon Web Services',
+    year: 2026,
+    badge: '/aws-certified-ai-practitioner.png',
+  },
+  {
+    title: 'AWS Certified Cloud Practitioner',
+    issuer: 'Amazon Web Services',
+    year: 2023,
+    badge: '/aws-certified-cloud-practitioner.png',
+  },
+  {
+    title: 'Azure Data Fundamentals',
+    issuer: 'Microsoft',
+    year: 2021,
+    badge: '/microsoft-certified-azure-data-fundamentals.png',
+  },
+  {
+    title: 'Azure Fundamentals (AZ-900)',
+    issuer: 'Microsoft',
+    year: 2020,
+    badge: '/microsoft-certified-azure-fundamentals.png',
+  },
+  {
+    title: 'HashiCorp Certified: Terraform Associate',
+    issuer: 'HashiCorp',
+    year: 2022,
+    badge: '/hashicorp-certified-terraform-associate.jpeg',
+  },
 ];
 
 export const skills = [
