@@ -5,6 +5,7 @@ import { Linkedin, Mail } from 'lucide-react';
 import { ThemeToggle } from './theme-toggle';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import { testimonials } from '@/data/content';
 
 const navItems: { href: string; label: string; highlight?: boolean }[] = [
   { href: '#about', label: 'About' },
@@ -13,6 +14,7 @@ const navItems: { href: string; label: string; highlight?: boolean }[] = [
   { href: '#projects', label: 'Projects' },
   { href: '#credentials', label: 'Credentials' },
   { href: '#skills', label: 'Skills' },
+  ...(testimonials.length ? [{ href: '#testimonials', label: 'Testimonials' }] : []),
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -64,7 +66,7 @@ export function Header() {
               priority
             />
           </div>
-          <div>
+          <div className="lg:hidden xl:block">
             <p className="text-sm text-mist">Ashu Saini</p>
             <p className="font-semibold text-ink dark:text-cloud">Solutions Architect</p>
           </div>
@@ -73,7 +75,7 @@ export function Header() {
         <motion.nav
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0, transition: { delay: 0.05 } }}
-          className="hidden items-center gap-4 text-sm text-ink/80 dark:text-cloud/80 lg:flex"
+          className="hidden items-center gap-0.5 whitespace-nowrap text-sm text-ink/80 dark:text-cloud/80 lg:flex xl:gap-3"
         >
           {navItems.map((item) => {
             const isActive = active === item.href.slice(1);
@@ -82,7 +84,7 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 aria-current={isActive ? 'true' : undefined}
-                className={`relative rounded-full px-3 py-2 transition hover:text-ink dark:hover:text-cloud ${
+                className={`relative rounded-full px-2.5 py-2 transition hover:text-ink dark:hover:text-cloud ${
                   isActive ? 'text-ink dark:text-cloud' : ''
                 }`}
               >

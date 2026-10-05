@@ -301,6 +301,65 @@ export const skills: { title: string; group: (typeof skillGroups)[number]; items
   },
 ];
 
+export const recommendationsUrl = 'https://www.linkedin.com/in/ashusaini-in/details/recommendations/';
+
+// LinkedIn recommendations, copied verbatim (one string per paragraph). `context` is only set where
+// the recommendation itself says how we worked together. The Testimonials section and its nav link
+// stay hidden while this list is empty.
+export const testimonials: {
+  name: string;
+  context?: string;
+  quote: string[];
+}[] = [
+  {
+    name: "Hemant Tayade",
+    context: "Worked together at Accenture",
+    quote: [
+      "Ashu is a highly dependable and talented professional who I had the pleasure of working with at Accenture. He brings a strong combination of technical expertise, ownership, and a collaborative mindset to every engagement.",
+      "What stood out most was his ability to understand complex requirements, work effectively with different stakeholders, and consistently deliver with a positive and professional attitude. He is someone you can rely on to take accountability and get things done.",
+      "I would gladly recommend Ashu to any organization looking for a skilled, committed, and team-oriented professional. It was a pleasure working with him, and I wish him continued success in his career.",
+    ],
+  },
+  {
+    name: "Kunal Chaumal",
+    quote: [
+      "I’m happy to recommend Ashu Saini for his professionalism, dedication, and strong work ethic. Ashu is a dependable and collaborative professional who consistently approaches challenges with a positive attitude and a solution-oriented mindset.",
+      "He has demonstrated strong communication skills, a willingness to take ownership, and the ability to work effectively with others. His commitment to delivering quality results and supporting his team makes him a valuable professional to work with.",
+      "I would gladly recommend Ashu to any organization looking for a responsible, motivated, and trustworthy professional.",
+    ],
+  },
+  {
+    name: "Sachin Gupta",
+    context: "Worked together at SoftwareOne",
+    quote: [
+      "I had the opportunity to work with him on a project at SoftwareOne, where he led the project exceptionally well. He did an amazing job managing the team and handling the various challenges, issues, and unexpected hiccups we faced along the way.",
+      "What I appreciated most was his supportive and collaborative approach. He was always there to support the team, provide guidance when needed, and help us navigate challenges effectively. His leadership, problem-solving skills, and ability to keep the team together made a real difference to the project.",
+    ],
+  },
+  {
+    name: "Harsimran Kaur",
+    context: "Worked under Ashu’s leadership",
+    quote: [
+      "I had the opportunity to work under Ashu's leadership, and I greatly valued his technical guidance and support. He has strong knowledge across cloud infrastructure, DevOps, and automation, particularly AWS, Azure, Terraform, Ansible, Jenkins, Docker, and Kubernetes.",
+      "What stood out to me was his ability to support the team through production issues and infrastructure changes while also encouraging people to learn and take ownership of their work. He was always approachable when guidance was needed and brought a calm, practical approach to solving technical challenges.",
+      "I learned a lot while working with Ashu and would confidently recommend him as a knowledgeable, dependable, and supportive technical leader.",
+    ],
+  },
+  {
+    name: "Pravind Vijaya",
+    quote: [
+      "Ashu is a solid professional, exhibiting one of the the highest levels of productivity, creativity and technical expertise I have seen in any consultant. He exudes confidence and dexterity when faced with immense pressure from engagements.",
+      "He is proactive and a definite asset to any team, driving initiatives above and beyond expected parameters.",
+    ],
+  },
+  {
+    name: "Sameer Sharma",
+    quote: [
+      "Ashu is an effective leader and a quick learner. One kind of a leader who always emphasizes on developing team and peers. He is agile enough to adapt to and support any kind of IT infrastructure or Devops architecture. While being in one of our team, he led the learning initiative of Containers. Linux, Devops and Cloud administration are his expertise areas.",
+    ],
+  },
+];
+
 export const contact = {
   email: 'ashuu25.saini@gmail.com',
   location: 'Kuala Lumpur, Malaysia',

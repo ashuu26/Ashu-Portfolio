@@ -4,9 +4,10 @@ import Image from 'next/image';
 import { ArrowUpRight, MapPin, MousePointer2, ShieldCheck, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { contact, credentials, hero, projects, stats, toolbelt } from '@/data/content';
+import { contact, credentials, hero, projects, stats, testimonials, toolbelt } from '@/data/content';
 import { ExperienceTimeline } from '@/components/interactive/experience-timeline';
 import { SkillsExplorer } from '@/components/interactive/skills-explorer';
+import { TestimonialsCarousel } from '@/components/interactive/testimonials-carousel';
 import { TerraformStudioShowcase } from '@/components/interactive/terraform-studio-showcase';
 import { Counter, Magnetic, Marquee, RoleRotator, TextReveal, TiltCard } from '@/components/interactive/motion-primitives';
 
@@ -344,6 +345,18 @@ export default function Page() {
         />
         <SkillsExplorer />
       </section>
+
+      {/* Testimonials */}
+      {testimonials.length > 0 && (
+        <section className="section-shell" id="testimonials">
+          <SectionHeader
+            eyebrow="Testimonials"
+            title="What colleagues and clients say"
+            copy="Recommendations from people I have worked with, shared on LinkedIn."
+          />
+          <TestimonialsCarousel />
+        </section>
+      )}
 
       {/* Contact */}
       <section className="section-shell" id="contact">
