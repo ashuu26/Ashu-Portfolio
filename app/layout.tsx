@@ -5,6 +5,7 @@ import { Manrope, Space_Grotesk } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
+import { CloudNetwork } from '@/components/interactive/cloud-network';
 import { CursorGlow, MotionProvider, ScrollProgress } from '@/components/interactive/page-effects';
 
 const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope', display: 'swap' });
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <ScrollProgress />
             <div className="min-h-screen">
               <div className="pointer-events-none fixed inset-0 bg-mesh opacity-70 mix-blend-screen dark:mix-blend-normal" aria-hidden />
+              <CloudNetwork className="fixed inset-0 z-0 h-full w-full" />
               <CursorGlow />
               <div className="relative z-10 flex min-h-screen flex-col">
                 <Header />

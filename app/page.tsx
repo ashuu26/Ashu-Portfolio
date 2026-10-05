@@ -5,7 +5,6 @@ import { ArrowUpRight, MapPin, MousePointer2, ShieldCheck, Sparkles } from 'luci
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { contact, credentials, hero, projects, stats, toolbelt } from '@/data/content';
-import { CloudNetwork } from '@/components/interactive/cloud-network';
 import { ExperienceTimeline } from '@/components/interactive/experience-timeline';
 import { SkillsExplorer } from '@/components/interactive/skills-explorer';
 import { TerraformStudioShowcase } from '@/components/interactive/terraform-studio-showcase';
@@ -58,7 +57,6 @@ export default function Page() {
     <div className="space-y-24 pb-24">
       {/* Hero */}
       <section className="relative pt-28 md:pt-32" id="about">
-        <CloudNetwork className="absolute inset-0 h-full w-full [mask-image:radial-gradient(ellipse_at_center,black_45%,transparent_85%)]" />
         <div className="section-shell relative">
           <div className="grid grid-cols-[minmax(0,1fr)] gap-10 lg:grid-cols-[1.1fr_0.9fr]">
             <motion.div

@@ -27,6 +27,7 @@ export function CloudNetwork({ className = '' }: { className?: string }) {
     let nodes: Node[] = [];
     let packets: Packet[] = [];
     let width = 0;
+    let seededWidth = 0;
     let height = 0;
     let frame = 0;
     let visible = true;
@@ -51,7 +52,19 @@ export function CloudNetwork({ className = '' }: { className?: string }) {
       canvas.width = width * dpr;
       canvas.height = height * dpr;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      // Height-only changes (mobile address bar showing/hiding on scroll) keep the existing graph
+      // instead of reshuffling it; nodes outside the new bounds are pulled back in.
+      if (nodes.length && Math.abs(width - seededWidth) < 1) {
+        for (const n of nodes) {
+          n.x = Math.min(n.x, width);
+          n.y = Math.min(n.y, height);
+        }
+        if (reduceMotion) draw();
+        return;
+      }
+      seededWidth = width;
       seed();
+      if (reduceMotion) draw();
     };
 
     const palette = () =>
