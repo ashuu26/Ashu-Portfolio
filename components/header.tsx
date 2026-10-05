@@ -4,16 +4,44 @@ import Image from 'next/image';
 import { Linkedin, Mail } from 'lucide-react';
 import { ThemeToggle } from './theme-toggle';
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
-const navItems = [
+const navItems: { href: string; label: string; highlight?: boolean }[] = [
   { href: '#about', label: 'About' },
+  { href: '#studio', label: 'Studio', highlight: true },
   { href: '#experience', label: 'Experience' },
   { href: '#projects', label: 'Projects' },
   { href: '#credentials', label: 'Credentials' },
+  { href: '#skills', label: 'Skills' },
   { href: '#contact', label: 'Contact' },
 ];
 
+function useActiveSection(ids: string[]) {
+  const [active, setActive] = useState(ids[0]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const hit = entries.find((entry) => entry.isIntersecting);
+        if (hit) setActive(hit.target.id);
+      },
+      { rootMargin: '-45% 0px -50% 0px' }
+    );
+    ids.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+    return () => observer.disconnect();
+  }, [ids]);
+
+  return active;
+}
+
+const sectionIds = navItems.map((item) => item.href.slice(1));
+
 export function Header() {
+  const active = useActiveSection(sectionIds);
+
   return (
     <header className="pointer-events-none fixed left-1/2 top-4 z-50 flex w-full max-w-7xl -translate-x-1/2 justify-center px-4">
       <motion.div
@@ -47,15 +75,29 @@ export function Header() {
           animate={{ opacity: 1, y: 0, transition: { delay: 0.05 } }}
           className="hidden items-center gap-4 text-sm text-ink/80 dark:text-cloud/80 lg:flex"
         >
-          {navItems.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="rounded-full px-3 py-2 transition hover:bg-white/60 hover:text-ink dark:hover:bg-white/10 dark:hover:text-cloud"
-            >
-              {item.label}
-            </a>
-          ))}
+          {navItems.map((item) => {
+            const isActive = active === item.href.slice(1);
+            return (
+              <a
+                key={item.href}
+                href={item.href}
+                aria-current={isActive ? 'true' : undefined}
+                className={`relative rounded-full px-3 py-2 transition hover:text-ink dark:hover:text-cloud ${
+                  isActive ? 'text-ink dark:text-cloud' : ''
+                }`}
+              >
+                {isActive && (
+                  <motion.span
+                    layoutId="nav-active"
+                    className="absolute inset-0 rounded-full bg-white/70 shadow-sm dark:bg-white/10"
+                    transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                  />
+                )}
+                {item.highlight && <span className="rainbow-ring absolute inset-0 rounded-full" aria-hidden />}
+                <span className={`relative ${item.highlight ? 'rainbow-text font-semibold' : ''}`}>{item.label}</span>
+              </a>
+            );
+          })}
         </motion.nav>
 
         <div className="flex items-center gap-2">

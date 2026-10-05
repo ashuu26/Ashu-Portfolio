@@ -5,6 +5,7 @@ import { Manrope, Space_Grotesk } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
+import { CursorGlow, MotionProvider, ScrollProgress } from '@/components/interactive/page-effects';
 
 const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope', display: 'swap' });
 const space = Space_Grotesk({ subsets: ['latin'], variable: '--font-space', display: 'swap' });
@@ -47,16 +48,20 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${manrope.variable} ${space.variable} antialiased transition-colors duration-300 bg-cloud text-ink dark:bg-night dark:text-cloud`}>
+      <body className={`${manrope.variable} ${space.variable} font-sans antialiased transition-colors duration-300 bg-cloud text-ink dark:bg-night dark:text-cloud`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
-          <div className="min-h-screen">
-            <div className="pointer-events-none fixed inset-0 bg-mesh opacity-70 mix-blend-screen dark:mix-blend-normal" aria-hidden />
-            <div className="relative z-10 flex min-h-screen flex-col">
-              <Header />
-              <main className="flex-1">{children}</main>
-              <Footer />
+          <MotionProvider>
+            <ScrollProgress />
+            <div className="min-h-screen">
+              <div className="pointer-events-none fixed inset-0 bg-mesh opacity-70 mix-blend-screen dark:mix-blend-normal" aria-hidden />
+              <CursorGlow />
+              <div className="relative z-10 flex min-h-screen flex-col">
+                <Header />
+                <main className="flex-1">{children}</main>
+                <Footer />
+              </div>
             </div>
-          </div>
+          </MotionProvider>
         </ThemeProvider>
       </body>
     </html>
