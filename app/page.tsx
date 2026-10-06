@@ -59,9 +59,9 @@ export default function Page() {
       {/* Hero */}
       <section className="relative pt-28 md:pt-32" id="about">
         <div className="section-shell relative">
-          <div className="grid grid-cols-[minmax(0,1fr)] gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="grid grid-cols-[minmax(0,1fr)] gap-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-10">
             <motion.div
-              className="hero-visual space-y-6 rounded-3xl border border-slate-200/70 p-6 sm:p-8 shadow-card dark:border-white/10 dark:shadow-glow"
+              className="hero-visual space-y-5 rounded-3xl border border-slate-200/70 p-6 sm:p-8 shadow-card dark:border-white/10 dark:shadow-glow"
               initial="hidden"
               animate="show"
               variants={container}
@@ -70,11 +70,11 @@ export default function Page() {
                 <Sparkles size={14} />
                 <RoleRotator roles={hero.roles} />
               </div>
-              <h1 className="text-4xl font-bold leading-tight text-ink dark:text-cloud sm:text-5xl lg:text-6xl">
+              <h1 className="text-4xl font-bold leading-[1.08] text-ink dark:text-cloud sm:text-5xl xl:text-[3.25rem]">
                 <TextReveal text={hero.title} delay={0.15} />
               </h1>
               <motion.p
-                className="text-lg text-ink/80 dark:text-cloud/80 sm:text-xl"
+                className="text-lg text-ink/80 dark:text-cloud/80"
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.7, duration: 0.6 }}
@@ -107,7 +107,7 @@ export default function Page() {
                 <Magnetic>
                   <Link
                     href="#projects"
-                    className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-pulse via-aurora to-ember px-5 py-3 text-sm font-semibold text-night shadow-glow"
+                    className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-pulse via-aurora to-ember px-5 py-3 xl:px-4 text-sm font-semibold text-night shadow-glow"
                   >
                     View featured projects
                     <ArrowUpRight size={16} className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
@@ -118,7 +118,7 @@ export default function Page() {
                     href="https://www.linkedin.com/in/ashusaini-in"
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full border border-white/10 px-5 py-3 text-sm text-ink/80 hover:border-white/30 dark:text-cloud/80"
+                    className="inline-flex items-center gap-2 rounded-full border border-white/10 px-5 py-3 xl:px-4 text-sm text-ink/80 hover:border-white/30 dark:text-cloud/80"
                   >
                     LinkedIn profile
                   </a>
@@ -127,7 +127,7 @@ export default function Page() {
                   <a
                     href="/Ashu-Saini-Resume.pdf"
                     download="Ashu-Saini-Resume.pdf"
-                    className="inline-flex items-center gap-2 rounded-full bg-white/90 px-5 py-3 text-sm font-semibold text-ink shadow-border dark:bg-white/10 dark:text-cloud"
+                    className="inline-flex items-center gap-2 rounded-full bg-white/90 px-5 py-3 xl:px-4 text-sm font-semibold text-ink shadow-border dark:bg-white/10 dark:text-cloud"
                   >
                     Download resume
                     <ArrowUpRight size={16} />
@@ -145,7 +145,7 @@ export default function Page() {
                 initial={{ opacity: 0, y: 20, scale: 0.97 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ delay: 0.12, duration: 0.6 }}
-                className="flex-1"
+                className="aspect-[4/5] sm:aspect-[5/4] lg:aspect-auto lg:min-h-0 lg:flex-1"
               >
                 <TiltCard className="h-full" max={6}>
                   <div className="card-surface relative h-full overflow-hidden p-0">
@@ -156,9 +156,9 @@ export default function Page() {
                     <Image
                       src="/profile-headshot-2026.jpg"
                       alt="Ashu Saini professional portrait"
-                      width={1200}
-                      height={1400}
-                      className="h-full w-full object-cover transition-transform duration-700 group-hover/tilt:scale-105"
+                      fill
+                      sizes="(min-width: 1024px) 45vw, 100vw"
+                      className="object-cover object-[center_20%] transition-transform duration-700 group-hover/tilt:scale-105"
                       priority
                     />
                   </div>
@@ -168,7 +168,7 @@ export default function Page() {
               <motion.div
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0, transition: { delay: 0.3 } }}
-                className="card-surface flex flex-nowrap items-center justify-center gap-3 overflow-x-auto px-4 py-4 sm:justify-between sm:gap-4"
+                className="card-surface grid grid-cols-6 gap-2 p-3 sm:gap-3 sm:p-4"
               >
                 {credentials.map((cert, idx) =>
                   cert.badge ? (
@@ -178,7 +178,7 @@ export default function Page() {
                       initial={{ opacity: 0, rotateY: -90 }}
                       animate={{ opacity: 1, rotateY: 0 }}
                       transition={{ delay: 0.5 + idx * 0.08, duration: 0.5 }}
-                      className="group h-14 w-14 shrink-0 [perspective:800px] sm:h-16 sm:w-16 lg:h-20 lg:w-20"
+                      className="group aspect-square w-full [perspective:800px]"
                     >
                       <div className="relative h-full w-full transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                         <div className="absolute inset-0 overflow-hidden rounded-2xl border border-slate-200/70 bg-white p-1.5 shadow-sm [backface-visibility:hidden] dark:border-white/10">

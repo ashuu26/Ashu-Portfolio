@@ -1,7 +1,7 @@
 export const hero = {
   title: 'Architecting the Cloud. Accelerating Business. Delivering Results.',
   subtitle:
-    '11 years moving enterprise workloads to Cloud (AWS/ Azure), automating with Terraform, and hardening platforms with DR strategy, cost controls, and secure network architectures.',
+    '11 years of experience architecting and solutioning enterprise cloud transformations across AWS and Azure, designing scalable and secure architectures, automating infrastructure with Terraform, and driving DR, cost optimization, governance, and cloud networking strategies.',
   badges: ['11+ Years Experience', 'Cloud (AWS/ Azure) Migrations', 'Terraform Automation', 'DevOps & SRE'],
   roles: ['Solutions Architect', 'Founder · Terraform Studio', 'Sr. Cloud Consultant', 'Migration Lead', 'IaC & DevOps Engineer'],
 };
@@ -76,7 +76,7 @@ export const terraformStudio = {
       short: 'AZ',
       source: 'hashicorp/azurerm',
       version: '~> 4.0',
-      status: 'In development',
+      status: 'Available',
       summary:
         'Same workflow on the azurerm provider, from resource groups and VNets to a CAF landing zone. Preview the plan today.',
       services: ['Resource groups', 'VNet & NSG', 'VMs · AKS', 'Azure SQL · Cosmos DB', 'Key Vault', 'CAF landing zone'],
@@ -124,6 +124,7 @@ export const experience = [
     highlights: [
       'Designed and delivered scalable, secure, enterprise-grade AWS solutions for leading FSI organizations.',
       'Architected and delivered a robust, enterprise-grade AWS cloud solution for a top-tier FSI.',
+      'Designed and developed end-to-end cloud HLD/LLD architectures, covering cloud infrastructure, networking, security, IAM, compute, storage, databases, DR, monitoring, and governance.',
       'Oversaw delivery of proposed solutions end to end, providing architectural guidance to delivery teams, resolving technical escalations, and ensuring successful implementation and client satisfaction across 12+ enterprise engagements.',
       'Automated infrastructure provisioning with Terraform and CloudFormation across multi-cloud environments, reducing manual provisioning time by 60%; implemented governance via AWS Systems Manager, Azure Automation, Azure Arc, and Azure Policy for 500+ resources.',
       'Conducted Cloud Readiness Assessments and TCO analyses for 10+ clients, producing roadmaps that drove 25-35% cost savings; identified Reserved Instance and right-sizing opportunities saving clients an average of $150K+ annually.',
