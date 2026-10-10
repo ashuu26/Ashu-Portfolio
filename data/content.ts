@@ -37,20 +37,20 @@ export const toolbelt = [
 export const terraformStudio = {
   name: 'Terraform Studio',
   role: 'Founder',
-  url: 'https://terraform-aws-studio.vercel.app',
+  url: 'https://www.terraformstudioiac.com',
   tagline: 'Infrastructure as Code for AWS and Azure',
   pitch:
     'Choose the services you need, configure them and download a working Terraform project where every resource references the others — no boilerplate, no guesswork.',
   verbs: ['build', 'plan', 'ship'],
   coBuilder: 'Abhishek Chaurasia',
   stats: [
-    { value: 54, label: 'AWS services' },
-    { value: 89, label: 'Terraform resource types' },
-    { value: 7, label: 'Guided presets' },
-    { value: 2, label: 'Cloud providers' },
+    { value: 55, label: 'AWS services' },
+    { value: 63, label: 'Azure services' },
+    { value: 233, label: 'Resource types' },
+    { value: 19, label: 'Guided presets' },
   ],
   steps: [
-    { title: 'Choose a cloud', copy: 'Start with AWS today. Azure is on the way.' },
+    { title: 'Choose a cloud', copy: 'Start with AWS or Azure. Both follow the same workflow.' },
     { title: 'Pick services', copy: 'Dependencies are suggested as you go, so the VPC, subnets and security groups line up.' },
     { title: 'Configure and learn', copy: 'Every block is explained, with links to the Terraform Registry docs.' },
     { title: 'Download', copy: 'Get a ZIP that is ready for terraform init and plan.' },
@@ -64,8 +64,8 @@ export const terraformStudio = {
       version: '~> 6.0',
       status: 'Available',
       summary:
-        'The full AWS studio: networking, compute, databases, storage, AWS Backup, CloudWatch and a multi-account Landing Zone.',
-      services: ['VPC & NAT', 'EC2 · ECS · EKS', 'Lambda', 'Aurora · DynamoDB', 'S3', 'Landing Zone'],
+        '55 services, from VPCs and subnets to EKS, Aurora, AWS Backup and CloudWatch, plus an Enterprise or Non-Enterprise multi-account landing zone.',
+      services: ['VPC & NAT', 'EC2 · ECS · EKS', 'Aurora · DynamoDB', 'S3 · Lambda', 'Backup · CloudWatch', 'Landing Zone'],
       network: 'VPC 10.0.0.0/16',
       nodes: { edge: 'ALB', compute: 'EC2', data: 'Aurora' },
       plan: ['aws_vpc.main', 'aws_lb.web', 'aws_instance.web[0]', 'aws_instance.web[1]', 'aws_rds_cluster.db'],
@@ -78,8 +78,8 @@ export const terraformStudio = {
       version: '~> 4.0',
       status: 'Available',
       summary:
-        'Same workflow on the azurerm provider, from resource groups and VNets to a CAF landing zone. Preview the plan today.',
-      services: ['Resource groups', 'VNet & NSG', 'VMs · AKS', 'Azure SQL · Cosmos DB', 'Key Vault', 'CAF landing zone'],
+        '63 services on the azurerm provider, from VNets and NSGs to AKS, Azure SQL and Cosmos DB, plus an Enterprise or Standard CAF landing zone.',
+      services: ['VNet & NSG', 'VMs · AKS', 'Azure SQL · Cosmos DB', 'Storage · Functions', 'Backup · Monitor', 'CAF landing zone'],
       network: 'VNET 10.1.0.0/16 · rg-web',
       nodes: { edge: 'App GW', compute: 'VM', data: 'Azure SQL' },
       plan: [
